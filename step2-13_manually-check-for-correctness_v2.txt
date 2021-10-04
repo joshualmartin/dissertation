@@ -1,0 +1,29 @@
+In this step, the CSVs from the previous step are copied from the previous step's folder, renamed with the ending "_manualCorrectness", and manually analyzed for correctness. First, the Step 2.12 python script is used to add in a column for the correctness of each ASR to a new csv file. This column is called "..._transcription_cleaned_correctness". The number or NaN in the "...containsFeature" column is copied over to this column since if the feature is not in the ASR output, it is automatically incorrect. Then, the following steps are undertaken generally:
+
+1) The csv is sorted in the following order (with each ASR output):
+    (a) by 0's and blanks in the "...correctness" column, so that the NaNs are all together
+    (b) by NaN's in the ASR output, because if it is blank, that means the ASR was unable to process the audio at all and therefore, needs no manual analysis
+    (c) by the "FeatureCountPerLine" column, to group lines which, in the original CORAAL utterance, contain the feature and those that do not. This is helpful because if the feature is present, the correctness is based on whether the feature in the ASR output is semantically equal to the original
+    (d) by the "InstancesCountPerLine" in order to group the number of occurrences
+    (e) by the "IterationNumber" to put lines with multiple instances in the correct order
+
+2) Correctness is then judged thusly:
+    (a) if the original utterance contains an AAL feature (habitual be or completive done) and the appearing feature in the ASR output matches the semantic meaning of the original, the ASR output is deemed correct. otherwise, the output is deemed incorrect
+    (b) if the original utterance contains an instance of the word, but not the AAL feature (non-habiutal be or non-completive done) and the instance of the word in the ASR output matches the grammatical function of the original, then it is deemed correct (e.g., original: "I will be going" vs. ASR: "He will be working" is deemed correct since the be is in a future progressive structure, even though the content is technically different), otherwise it is deemed incorrect 
+    (c) because there is no semantic differentiation to "ain't" in the same manner as the difference between habitual/non-habitual be or completive/non-completive done, if the ASR output has the word "ain't" it is correct, if not, it is incorrect. However, those that contain "ain't" will be double checked regardless
+
+2.1) correctness for be
+    (a) if the original structure is "to be ____" and the ASR structure is "to be _____", this is deemed correct, even if the second halves are different grammatically (e.g., "to be ready" vs. "to be running")
+    (b) if the original is preceded by a modal and the ASR is preceded by a modal, it is deemed correct, even if the modals are different between the two (e.g., "can be" vs. "could be"). But if one has a modal preceding it and the other doesn't, then it is incorrect
+    (c) if the original is immediately preceded by a subject, but the ASR output is not, then this is deemed incorrect
+    (d) if the ASR output begins with "be" but the original does not begin with "be", then the ASR has deleted preceding important information such as the subject and is deemed incorrect, even if the subsequent words match
+
+
+2.2) correctness for done
+    (a) if the original CORAAL utterance has a non-standard simple past form of 'done' (e.g. 'all the wrong he done' meaning 'all the wrong he did') and the ASR inserts have/has/had or a contracted form of have/has/had, it is counted as incorrect because it changes the tense/aspect from simple past to a perfect form (or if vice verse, the CORAAL has the have/has/had, but the ASR doesn't)
+    (b) if the original utterance has the subject or subject plus have/had/has immediately to the left, but the ASR output does not, it is deemed incorrect. 
+    (c) if the original utterance has have/had/has/'d/'s and the ASR utterance has a different have/has/had/'d/'s (e.g., original: "what he had done and all th" vs. ASR: "when he 's done now") that was judged as correct because it retained the perfect aspect
+
+
+
+3) Then the csv is sorted by Filename then Line number

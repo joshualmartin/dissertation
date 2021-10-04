@@ -1,0 +1,3 @@
+,amazon,deepspeech,google,IBMWatson,microsoft
+correct,49.45,0.55,23.11,1.29,21.82
+incorrect,50.55,99.45,76.89,98.71,78.18
