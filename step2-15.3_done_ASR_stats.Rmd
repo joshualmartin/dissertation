@@ -1,0 +1,669 @@
+---
+title: "Dissertation: Chapter 2"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+author:
+- Joshua Martin (adapted from code from Kevin Tang)
+output:
+  html_document:
+    theme: default
+    toc: yes
+  pdf_document:
+    highlight: zenburn
+    toc: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+Loading in the data
+
+
+```{r}
+rm(list=ls())
+df = read.csv('/Users/joshmartin/Dropbox (UFL)/dissertation/dissertation_pipelines/2_ASR_analysis/step2-13_check_for_correctness_manually_csvs/done_manualCorrectness.csv', header=TRUE)
+
+str(df)
+```
+
+Load the libraries
+
+```{r}
+library(lme4)
+library(sjPlot)
+library(ggplot2)
+library(lmerTest)
+library(brms)
+
+z.fun <- function(df,variables) { 
+  for (variable in variables) {
+  df[paste0(variable,'.z')] <- NULL
+  df[paste0(variable,'.z')] <- as.numeric(scale(df[variable]))
+  }
+  return (df)
+}
+log10.lpc.z.fun <- function(df,variables) { 
+  for (variable in variables) {
+  df[paste0(variable,'.log10.lpc.z')] <- NULL
+  df[paste0(variable,'.log10.lpc.z')] <- as.numeric(scale(log10(df[variable]+1)))
+  }
+  return (df)
+}
+
+```
+
+Examine some variables
+
+```{r}
+# Examine how many features per speaker and its distribution
+plot(table(df$Speaker))
+plot(density(table(df$Speaker)))
+
+table(df$Completive)
+
+table(df$Speaker,df$Completive)
+
+
+# Speech rate
+plot(density(df$SpeechRate))
+
+# Speech to Noise Ratio
+plot(df$WadaSNRRigal)
+
+# Correctness
+table(df$amazon_transcription_cleaned_correctness)
+table(df$deepspeech_transcription_cleaned_correctness)
+table(df$google_transcription_cleaned_correctness)
+table(df$IBMWatson_transcription_cleaned_correctness)
+table(df$microsoft_transcription_cleaned_correctness)
+
+
+# Correctness by feature
+table(df$amazon_transcription_cleaned_correctness, df$Completive)
+table(df$deepspeech_transcription_cleaned_correctness, df$Completive)
+table(df$google_transcription_cleaned_correctness, df$Completive)
+table(df$IBMWatson_transcription_cleaned_correctness, df$Completive)
+table(df$microsoft_transcription_cleaned_correctness, df$Completive)
+
+
+# pre-feature and post-feature WER
+plot(df$amazon_transcription_cleaned_preFeature_WER)
+plot(df$amazon_transcription_cleaned_postFeature_WER)
+plot(df$deepspeech_transcription_cleaned_preFeature_WER)
+plot(df$deepspeech_transcription_cleaned_postFeature_WER)
+plot(df$google_transcription_cleaned_preFeature_WER)
+plot(df$google_transcription_cleaned_postFeature_WER)
+plot(df$IBMWatson_transcription_cleaned_preFeature_WER)
+plot(df$IBMWatson_transcription_cleaned_postFeature_WER)
+plot(df$microsoft_transcription_cleaned_preFeature_WER)
+plot(df$microsoft_transcription_cleaned_postFeature_WER)
+
+
+
+
+```
+
+
+
+Prepare your variables for regression
+
+```{r}
+# Sum coding for feature-type
+# contrasts(df$done_type)
+df$done_type_factor = as.character(df$Completive)
+df$done_type_factor[df$done_type_factor=='0'] <- 'Non-Completive'
+df$done_type_factor[df$done_type_factor=='1'] <- 'Completive'
+table(df$done_type_factor)
+df$done_type_factor = as.factor(df$done_type_factor)
+contrasts(df$done_type_factor)
+df$done_type_factor <- relevel(df$done_type_factor, ref = 'Non-Completive')
+table(df$done_type_factor)
+contrasts(df$done_type_factor)
+coding = matrix(c(-0.5,0.5))
+colnames(coding) = 'Completive.vs.Non-Completive'
+coding
+contrasts(df$done_type_factor) <- coding
+contrasts(df$done_type_factor)
+
+
+log10.z.vars = c('Content_cleaned_WordCount','Content_cleaned_PreFeature_WordCount','Content_cleaned_PostFeature_WordCount')
+
+z.vars = c(
+           'amazon_transcription_cleaned_TotalWER','amazon_transcription_cleaned_preFeature_WER',
+           'amazon_transcription_cleaned_postFeature_WER',
+           'deepspeech_transcription_cleaned_TotalWER','deepspeech_transcription_cleaned_preFeature_WER',
+           'deepspeech_transcription_cleaned_postFeature_WER',
+           'google_transcription_cleaned_TotalWER','google_transcription_cleaned_preFeature_WER',
+           'google_transcription_cleaned_postFeature_WER',
+           'IBMWatson_transcription_cleaned_TotalWER','IBMWatson_transcription_cleaned_preFeature_WER',
+           'IBMWatson_transcription_cleaned_postFeature_WER',
+           'microsoft_transcription_cleaned_TotalWER','microsoft_transcription_cleaned_preFeature_WER',
+           'microsoft_transcription_cleaned_postFeature_WER',
+           'SpeechRate', 'WadaSNRRigal'
+           )
+df = z.fun(df,z.vars)
+df = log10.lpc.z.fun(df,log10.z.vars)
+
+df$amazon_transcription_cleaned_correctness = as.factor(df$amazon_transcription_cleaned_correctness)
+df$deepspeech_transcription_cleaned_correctness = as.factor(df$deepspeech_transcription_cleaned_correctness)
+df$google_transcription_cleaned_correctness = as.factor(df$google_transcription_cleaned_correctness)
+df$IBMWatson_transcription_cleaned_correctness = as.factor(df$IBMWatson_transcription_cleaned_correctness)
+df$microsoft_transcription_cleaned_correctness = as.factor(df$microsoft_transcription_cleaned_correctness)
+
+
+df$amazon_correct_factor = df$amazon_transcription_cleaned_correctness
+df$deepspeech_correct_factor = df$deepspeech_transcription_cleaned_correctness
+df$google_correct_factor = df$google_transcription_cleaned_correctness
+df$IBMWatson_correct_factor = df$IBMWatson_transcription_cleaned_correctness
+df$microsoft_correct_factor = df$microsoft_transcription_cleaned_correctness
+
+
+
+# Sum coding correctness
+coding = matrix(c(-0.5,0.5))
+colnames(coding) = 'Correct.vs.Incorrect'
+coding
+
+contrasts(df$amazon_correct_factor) <- coding
+contrasts(df$amazon_correct_factor)
+
+contrasts(df$deepspeech_correct_factor) <- coding
+contrasts(df$deepspeech_correct_factor)
+
+contrasts(df$google_correct_factor) <- coding
+contrasts(df$google_correct_factor)
+
+contrasts(df$IBMWatson_correct_factor) <- coding
+contrasts(df$IBMWatson_correct_factor)
+
+contrasts(df$microsoft_correct_factor) <- coding
+contrasts(df$microsoft_correct_factor)
+
+```
+
+
+# descriptive stats for WER
+
+```{r}
+completive.df = subset(df,done_type_factor == 'Completive')
+noncompletive.df = subset(df,done_type_factor == 'Non-Completive')
+
+
+# utterance, amazon pre-feature Non-Completive
+errCt = sum(noncompletive.df$amazon_transcription_cleaned_preFeature_errorCount[!is.na(noncompletive.df$amazon_transcription_cleaned_preFeature_errorCount)])
+wc = sum(noncompletive.df$Content_cleaned_PreFeature_WordCount)
+noncompletive_amazon_preDone_WER = errCt/wc
+
+# utterance, amazon pre-feature Completive
+errCt = sum(completive.df$amazon_transcription_cleaned_preFeature_errorCount[!is.na(completive.df$amazon_transcription_cleaned_preFeature_errorCount)])
+wc = sum(completive.df$Content_cleaned_PreFeature_WordCount)
+completive_amazon_preDone_WER = errCt/wc
+
+noncompletive_amazon_preDone_WER
+completive_amazon_preDone_WER
+completive_amazon_preDone_WER/noncompletive_amazon_preDone_WER
+
+# utterance, amazon post-feature Non-Completive
+errCt = sum(noncompletive.df$amazon_transcription_cleaned_postFeature_errorCount[!is.na(noncompletive.df$amazon_transcription_cleaned_postFeature_errorCount)])
+wc = sum(noncompletive.df$Content_cleaned_PostFeature_WordCount)
+noncompletive_amazon_postDone_WER = errCt/wc
+
+# utterance, amazon post-feature Completive
+errCt = sum(completive.df$amazon_transcription_cleaned_postFeature_errorCount[!is.na(completive.df$amazon_transcription_cleaned_postFeature_errorCount)])
+wc = sum(completive.df$Content_cleaned_PostFeature_WordCount)
+completive_amazon_postDone_WER = errCt/wc
+
+noncompletive_amazon_postDone_WER
+completive_amazon_postDone_WER
+completive_amazon_postDone_WER/noncompletive_amazon_postDone_WER
+
+
+
+
+# utterance, deepspeech pre-feature Non-Completive
+errCt = sum(noncompletive.df$deepspeech_transcription_cleaned_preFeature_errorCount[!is.na(noncompletive.df$deepspeech_transcription_cleaned_preFeature_errorCount)])
+wc = sum(noncompletive.df$Content_cleaned_PreFeature_WordCount)
+noncompletive_deepspeech_preDone_WER = errCt/wc
+
+# utterance, deepspeech pre-feature Completive
+errCt = sum(completive.df$deepspeech_transcription_cleaned_preFeature_errorCount[!is.na(completive.df$deepspeech_transcription_cleaned_preFeature_errorCount)])
+wc = sum(completive.df$Content_cleaned_PreFeature_WordCount)
+completive_deepspeech_preDone_WER = errCt/wc
+
+noncompletive_deepspeech_preDone_WER
+completive_deepspeech_preDone_WER
+completive_deepspeech_preDone_WER/noncompletive_deepspeech_preDone_WER
+
+# utterance, deepspeech post-feature Non-Completive
+errCt = sum(noncompletive.df$deepspeech_transcription_cleaned_postFeature_errorCount[!is.na(noncompletive.df$deepspeech_transcription_cleaned_postFeature_errorCount)])
+wc = sum(noncompletive.df$Content_cleaned_PostFeature_WordCount)
+noncompletive_deepspeech_postDone_WER = errCt/wc
+
+# utterance, deepspeech post-feature Completive
+errCt = sum(completive.df$deepspeech_transcription_cleaned_postFeature_errorCount[!is.na(completive.df$deepspeech_transcription_cleaned_postFeature_errorCount)])
+wc = sum(completive.df$Content_cleaned_PostFeature_WordCount)
+completive_deepspeech_postDone_WER = errCt/wc
+
+noncompletive_deepspeech_postDone_WER
+completive_deepspeech_postDone_WER
+completive_deepspeech_postDone_WER/noncompletive_deepspeech_postDone_WER
+
+
+
+
+# utterance, google pre-feature Non-Completive
+errCt = sum(noncompletive.df$google_transcription_cleaned_preFeature_errorCount[!is.na(noncompletive.df$google_transcription_cleaned_preFeature_errorCount)])
+wc = sum(noncompletive.df$Content_cleaned_PreFeature_WordCount)
+noncompletive_google_preDone_WER = errCt/wc
+
+# utterance, google pre-feature Completive
+errCt = sum(completive.df$google_transcription_cleaned_preFeature_errorCount[!is.na(completive.df$google_transcription_cleaned_preFeature_errorCount)])
+wc = sum(completive.df$Content_cleaned_PreFeature_WordCount)
+completive_google_preDone_WER = errCt/wc
+
+noncompletive_google_preDone_WER
+completive_google_preDone_WER
+completive_google_preDone_WER/noncompletive_google_preDone_WER
+
+# utterance, google post-feature Non-Completive
+errCt = sum(noncompletive.df$google_transcription_cleaned_postFeature_errorCount[!is.na(noncompletive.df$google_transcription_cleaned_postFeature_errorCount)])
+wc = sum(noncompletive.df$Content_cleaned_PostFeature_WordCount)
+noncompletive_google_postDone_WER = errCt/wc
+
+# utterance, google post-feature Completive
+errCt = sum(completive.df$google_transcription_cleaned_postFeature_errorCount[!is.na(completive.df$google_transcription_cleaned_postFeature_errorCount)])
+wc = sum(completive.df$Content_cleaned_PostFeature_WordCount)
+completive_google_postDone_WER = errCt/wc
+
+noncompletive_google_postDone_WER
+completive_google_postDone_WER
+completive_google_postDone_WER/noncompletive_google_postDone_WER
+
+
+
+
+# utterance, IBMWatson pre-feature Non-Completive
+errCt = sum(noncompletive.df$IBMWatson_transcription_cleaned_preFeature_errorCount[!is.na(noncompletive.df$IBMWatson_transcription_cleaned_preFeature_errorCount)])
+wc = sum(noncompletive.df$Content_cleaned_PreFeature_WordCount)
+noncompletive_IBMWatson_preDone_WER = errCt/wc
+
+# utterance, IBMWatson pre-feature Completive
+errCt = sum(completive.df$IBMWatson_transcription_cleaned_preFeature_errorCount[!is.na(completive.df$IBMWatson_transcription_cleaned_preFeature_errorCount)])
+wc = sum(completive.df$Content_cleaned_PreFeature_WordCount)
+completive_IBMWatson_preDone_WER = errCt/wc
+
+noncompletive_IBMWatson_preDone_WER
+completive_IBMWatson_preDone_WER
+completive_IBMWatson_preDone_WER/noncompletive_IBMWatson_preDone_WER
+
+# utterance, IBMWatson post-feature Non-Completive
+errCt = sum(noncompletive.df$IBMWatson_transcription_cleaned_postFeature_errorCount[!is.na(noncompletive.df$IBMWatson_transcription_cleaned_postFeature_errorCount)])
+wc = sum(noncompletive.df$Content_cleaned_PostFeature_WordCount)
+noncompletive_IBMWatson_postDone_WER = errCt/wc
+
+# utterance, IBMWatson post-feature Completive
+errCt = sum(completive.df$IBMWatson_transcription_cleaned_postFeature_errorCount[!is.na(completive.df$IBMWatson_transcription_cleaned_postFeature_errorCount)])
+wc = sum(completive.df$Content_cleaned_PostFeature_WordCount)
+completive_IBMWatson_postDone_WER = errCt/wc
+
+noncompletive_IBMWatson_postDone_WER
+completive_IBMWatson_postDone_WER
+completive_IBMWatson_postDone_WER/noncompletive_IBMWatson_postDone_WER
+
+
+
+# utterance, microsoft pre-feature Non-Completive
+errCt = sum(noncompletive.df$microsoft_transcription_cleaned_preFeature_errorCount[!is.na(noncompletive.df$microsoft_transcription_cleaned_preFeature_errorCount)])
+wc = sum(noncompletive.df$Content_cleaned_PreFeature_WordCount)
+noncompletive_microsoft_preDone_WER = errCt/wc
+
+# utterance, microsoft pre-feature Completive
+errCt = sum(completive.df$microsoft_transcription_cleaned_preFeature_errorCount[!is.na(completive.df$microsoft_transcription_cleaned_preFeature_errorCount)])
+wc = sum(completive.df$Content_cleaned_PreFeature_WordCount)
+completive_microsoft_preDone_WER = errCt/wc
+
+noncompletive_microsoft_preDone_WER
+completive_microsoft_preDone_WER
+completive_microsoft_preDone_WER/noncompletive_microsoft_preDone_WER
+
+# utterance, microsoft post-feature Non-Completive
+errCt = sum(noncompletive.df$microsoft_transcription_cleaned_postFeature_errorCount[!is.na(noncompletive.df$microsoft_transcription_cleaned_postFeature_errorCount)])
+wc = sum(noncompletive.df$Content_cleaned_PostFeature_WordCount)
+noncompletive_microsoft_postDone_WER = errCt/wc
+
+# utterance, microsoft post-feature Completive
+errCt = sum(completive.df$microsoft_transcription_cleaned_postFeature_errorCount[!is.na(completive.df$microsoft_transcription_cleaned_postFeature_errorCount)])
+wc = sum(completive.df$Content_cleaned_PostFeature_WordCount)
+completive_microsoft_postDone_WER = errCt/wc
+
+noncompletive_microsoft_postDone_WER
+completive_microsoft_postDone_WER
+completive_microsoft_postDone_WER/noncompletive_microsoft_postDone_WER
+
+
+```
+
+# Analysis 1: Predicting Correctness by Feature Type 
+
+while controlling for
+* Speech Rate,
+* Speech-to-Noise Ratio (WADA), 
+* Pre-Feature Word Count, Post-Feature Word Count
+* Pre-Feature Word Error Rate, Post-Feature Word Error Rate
+
+
+
+## Amazon
+
+```{r}
+# Amazon
+
+
+amazon.utt.utt_prepost.wc_WER_sr_snr_glmermod = glmer(amazon_transcription_cleaned_correctness ~  
+                    done_type_factor +
+                    Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    amazon_transcription_cleaned_preFeature_WER.z +
+                    Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    amazon_transcription_cleaned_postFeature_WER.z + 
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1 |Speaker)
+                      , data=df,family=binomial, control=glmerControl(optimizer="bobyqa"))
+summary(amazon.utt.utt_prepost.wc_WER_sr_snr_glmermod)
+plot_model(amazon.utt.utt_prepost.wc_WER_sr_snr_glmermod, type = "est")
+
+
+```
+
+
+
+## deepspeech
+
+```{r}
+# deepspeech
+
+
+deepspeech.utt.utt_prepost.wc_WER_sr_snr_glmermod = glmer(deepspeech_transcription_cleaned_correctness ~  
+                    #done_type_factor +
+                    Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    deepspeech_transcription_cleaned_preFeature_WER.z +
+                    Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    deepspeech_transcription_cleaned_postFeature_WER.z + 
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1 |Speaker)
+                      , data=df,family=binomial, control=glmerControl(optimizer="Nelder_Mead"))
+summary(deepspeech.utt.utt_prepost.wc_WER_sr_snr_glmermod)
+plot_model(deepspeech.utt.utt_prepost.wc_WER_sr_snr_glmermod, type = "est")
+
+
+```
+
+
+
+## google
+
+```{r}
+# google
+
+
+google.utt.utt_prepost.wc_WER_sr_snr_glmermod = glmer(google_transcription_cleaned_correctness ~  
+                    done_type_factor +
+                    Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    google_transcription_cleaned_preFeature_WER.z +
+                    Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    google_transcription_cleaned_postFeature_WER.z + 
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1 |Speaker)
+                      , data=df,family=binomial, control=glmerControl(optimizer="bobyqa"))
+summary(google.utt.utt_prepost.wc_WER_sr_snr_glmermod)
+plot_model(google.utt.utt_prepost.wc_WER_sr_snr_glmermod, type = "est")
+
+
+```
+
+
+
+## IBMWatson
+
+```{r}
+# IBMWatson
+
+
+IBMWatson.utt.utt_prepost.wc_WER_sr_snr_glmermod = glmer(IBMWatson_transcription_cleaned_correctness ~  
+                    done_type_factor +
+                    Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    IBMWatson_transcription_cleaned_preFeature_WER.z +
+                    Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    IBMWatson_transcription_cleaned_postFeature_WER.z + 
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1 |Speaker)
+                      , data=df,family=binomial, control=glmerControl(optimizer="bobyqa"))
+summary(IBMWatson.utt.utt_prepost.wc_WER_sr_snr_glmermod)
+plot_model(IBMWatson.utt.utt_prepost.wc_WER_sr_snr_glmermod, type = "est")
+
+
+```
+
+
+## microsoft
+
+```{r}
+# microsoft
+
+
+microsoft.utt.utt_prepost.wc_WER_sr_snr_glmermod = glmer(microsoft_transcription_cleaned_correctness ~  
+                    done_type_factor +
+                    Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    microsoft_transcription_cleaned_preFeature_WER.z +
+                    Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    microsoft_transcription_cleaned_postFeature_WER.z + 
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1 |Speaker)
+                      , data=df,family=binomial, control=glmerControl(optimizer="bobyqa"))
+summary(microsoft.utt.utt_prepost.wc_WER_sr_snr_glmermod)
+plot_model(microsoft.utt.utt_prepost.wc_WER_sr_snr_glmermod, type = "est")
+
+
+```
+
+
+
+
+
+
+
+# Analysis 2: Estimating Surrounding Word Error Rate with Feature Type
+
+while controlling for
+* Feature Correctness
+* Speech Rate
+* Speech-to-Noise Rate (WADA)
+
+specifically:
+* Post-Feature Word Count for the Word Error Rate of the Pre-Feature Word Count
+* Post-Feature Word Error Rate for the Word Error Rate of the Pre-Feature Word Error Rate
+
+## Amazon: Pre-Feature
+
+```{r}
+amazon.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod = lmerTest::lmer(amazon_transcription_cleaned_preFeature_WER ~
+                    done_type_factor +
+                    amazon_correct_factor +
+                    amazon_transcription_cleaned_postFeature_WER.z + 
+                    # Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1|Speaker)
+                      , data=df)
+summary(amazon.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod,ddf = "Satterthwaite")
+plot_model(amazon.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod, type = "est")
+```
+
+## Amazon: Post-Feature
+
+```{r}
+amazon.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod = lmerTest::lmer(amazon_transcription_cleaned_postFeature_WER ~
+                    done_type_factor +                                                              
+                    amazon_correct_factor +
+                    amazon_transcription_cleaned_preFeature_WER.z + 
+                    Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    # Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1|Speaker)
+                      , data=df)
+summary(amazon.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod,ddf = "Satterthwaite")
+plot_model(amazon.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod, type = "est")
+```
+
+
+
+## deepspeech: Pre-Feature
+
+```{r}
+deepspeech.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod = lmerTest::lmer(deepspeech_transcription_cleaned_preFeature_WER ~
+                    done_type_factor +
+                    deepspeech_correct_factor +
+                    deepspeech_transcription_cleaned_postFeature_WER.z + 
+                    # Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1|Speaker)
+                      , data=df)
+summary(deepspeech.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod,ddf = "Satterthwaite")
+plot_model(deepspeech.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod, type = "est")
+```
+
+## deepspeech: Post-Feature
+
+```{r}
+deepspeech.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod = lmerTest::lmer(deepspeech_transcription_cleaned_postFeature_WER ~
+                    done_type_factor +                                                              
+                    deepspeech_correct_factor +
+                    deepspeech_transcription_cleaned_preFeature_WER.z + 
+                    Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    # Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1|Speaker)
+                      , data=df)
+summary(deepspeech.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod,ddf = "Satterthwaite")
+plot_model(deepspeech.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod, type = "est")
+```
+
+
+
+## google: Pre-Feature
+
+```{r}
+google.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod = lmerTest::lmer(google_transcription_cleaned_preFeature_WER ~
+                    done_type_factor +
+                    google_correct_factor +
+                    google_transcription_cleaned_postFeature_WER.z + 
+                    # Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1|Speaker)
+                      , data=df)
+summary(google.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod,ddf = "Satterthwaite")
+plot_model(google.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod, type = "est")
+```
+
+## google: Post-Feature
+
+```{r}
+google.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod = lmerTest::lmer(google_transcription_cleaned_postFeature_WER ~
+                    done_type_factor +                                                              
+                    google_correct_factor +
+                    google_transcription_cleaned_preFeature_WER.z + 
+                    Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    # Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1|Speaker)
+                      , data=df)
+summary(google.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod,ddf = "Satterthwaite")
+plot_model(google.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod, type = "est")
+```
+
+
+
+
+## IBMWatson: Pre-Feature
+
+```{r}
+IBMWatson.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod = lmerTest::lmer(IBMWatson_transcription_cleaned_preFeature_WER ~
+                    done_type_factor +
+                    IBMWatson_correct_factor +
+                    IBMWatson_transcription_cleaned_postFeature_WER.z + 
+                    # Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1|Speaker)
+                      , data=df)
+summary(IBMWatson.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod,ddf = "Satterthwaite")
+plot_model(IBMWatson.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod, type = "est")
+```
+
+## IBMWatson: Post-Feature
+
+```{r}
+IBMWatson.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod = lmerTest::lmer(IBMWatson_transcription_cleaned_postFeature_WER ~
+                    done_type_factor +                                                              
+                    IBMWatson_correct_factor +
+                    IBMWatson_transcription_cleaned_preFeature_WER.z + 
+                    Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    # Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1|Speaker)
+                      , data=df)
+summary(IBMWatson.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod,ddf = "Satterthwaite")
+plot_model(IBMWatson.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod, type = "est")
+```
+
+
+
+## microsoft: Pre-Feature
+
+```{r}
+microsoft.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod = lmerTest::lmer(microsoft_transcription_cleaned_preFeature_WER ~
+                    done_type_factor +
+                    microsoft_correct_factor +
+                    microsoft_transcription_cleaned_postFeature_WER.z + 
+                    # Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1|Speaker)
+                      , data=df)
+summary(microsoft.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod,ddf = "Satterthwaite")
+plot_model(microsoft.utt.utt_preWER_prepost.cor.wc_WER_sr_snr.lmermod, type = "est")
+```
+
+## microsoft: Post-Feature
+
+```{r}
+microsoft.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod = lmerTest::lmer(microsoft_transcription_cleaned_postFeature_WER ~
+                    done_type_factor +                                                              
+                    microsoft_correct_factor +
+                    microsoft_transcription_cleaned_preFeature_WER.z + 
+                    Content_cleaned_PreFeature_WordCount.log10.lpc.z +
+                    # Content_cleaned_PostFeature_WordCount.log10.lpc.z +
+                    SpeechRate.z +
+                    WadaSNRRigal.z +
+                    (1|Speaker)
+                      , data=df)
+summary(microsoft.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod,ddf = "Satterthwaite")
+plot_model(microsoft.utt.utt_postWER_prepost.cor.wc_WER_sr_snr.lmermod, type = "est")
+```
+
+
+
+
