@@ -1,0 +1,8 @@
+,Noun_be_VerbPastParticiple,Noun_be_VerbPastParticiple,Noun_be_VerbPresentParticiple,Noun_be_VerbPresentParticiple,PronounPersonal_be_VerbPastParticiple,PronounPersonal_be_VerbPastParticiple,PronounPersonal_be_VerbPresentParticiple,PronounPersonal_be_VerbPresentParticiple
+,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized
+i,0,0.0,0,0.0,0,0.0,1,0.010299958480867365
+matches,1,0.010299958480867365,0,0.0,0,0.0,0,0.0
+pans,1,0.010299958480867365,0,0.0,0,0.0,0,0.0
+sheep,0,0.0,1,0.010299958480867365,0,0.0,0,0.0
+they,0,0.0,0,0.0,1,0.010299958480867365,1,0.010299958480867365
+trade,1,0.010299958480867365,1,0.010299958480867365,0,0.0,0,0.0

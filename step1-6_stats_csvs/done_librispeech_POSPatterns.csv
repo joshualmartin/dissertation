@@ -1,0 +1,6 @@
+,POSPatternRawCount,POSPatternNormalizedCount,POSPatternPercentTotal,POSPatternFileRawCount,POSPatternFilePercentTotal,POSPatternFileList
+PronounPersonal_done_VerbPastParticiple,8,0.082,57.14,8,0.14,"['1363-135842-0027', '1363-135842-0039', '4841-26659-0060', '4841-26659-0071', '5296-26679-0026', '5653-46266-0004', '7320-93280-0022', '8066-114256-0006']"
+Noun_done_VerbBase,2,0.021,14.29,2,0.03,"['238-122530-0008', '3997-182399-0006']"
+PronounPersonal_done_VerbBase,2,0.021,14.29,2,0.03,"['3997-182399-0018', '5456-62014-0010']"
+ConstituentBoundary_done_VerbBase,1,0.01,7.14,1,0.02,['4860-13185-0062']
+Noun_done_VerbPastParticiple,1,0.01,7.14,1,0.02,['2691-156750-0022']

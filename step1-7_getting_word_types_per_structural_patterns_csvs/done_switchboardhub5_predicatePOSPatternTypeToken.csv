@@ -1,0 +1,9 @@
+,Noun_done_VerbPastParticiple,Noun_done_VerbPastParticiple,PronounPersonal_done_VerbPastParticiple,PronounPersonal_done_VerbPastParticiple
+,Raw,Normalized,Raw,Normalized
+bought,1,0.030584949391084245,0,0.0
+broke,0,0.0,1,0.030584949391084245
+dealt,0,0.0,1,0.030584949391084245
+made,0,0.0,1,0.030584949391084245
+screwed,1,0.030584949391084245,0,0.0
+took,0,0.0,1,0.030584949391084245
+went,0,0.0,2,0.06116989878216849

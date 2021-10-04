@@ -1,0 +1,6 @@
+,SubjectRawCount,SubjectNormalizedCount,SubjectPercentTotal,SubjectFileCount,SubjectFilePercentTotal,SubjectFileList
+they,3,0.092,37.5,3,0.06,"['sw2150A-ms98-a', 'sw2255B-ms98-a', 'sw4092B-ms98-a']"
+i,2,0.061,25.0,2,0.04,"['sw3341B-ms98-a', 'sw3594A-ms98-a']"
+bush,1,0.031,12.5,1,0.02,['sw2420B-ms98-a']
+uncle sam,1,0.031,12.5,1,0.02,['sw2523B-ms98-a']
+you,1,0.031,12.5,1,0.02,['sw3048B-ms98-a']

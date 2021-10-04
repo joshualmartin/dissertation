@@ -1,0 +1,7 @@
+,SubjectRawCount,SubjectNormalizedCount,SubjectPercentTotal,SubjectFileCount,SubjectFilePercentTotal,SubjectFileList
+they,2,0.021,25.0,2,0.03,"['1460-138289-0003', '6060-58090-0004']"
+trade,2,0.021,25.0,2,0.03,"['1649-150127-0042', '2201-160438-0033']"
+i,1,0.01,12.5,1,0.02,['4712-93896-0036']
+matches,1,0.01,12.5,1,0.02,['5894-64095-0014']
+pans,1,0.01,12.5,1,0.02,['7134-67233-0006']
+sheep,1,0.01,12.5,1,0.02,['3479-153286-0038']

@@ -1,0 +1,14 @@
+,ConstituentBoundary_done_VerbPastParticiple,ConstituentBoundary_done_VerbPastParticiple,Noun_done_VerbPastParticiple,Noun_done_VerbPastParticiple,PronounIndefinite_done_VerbPastParticiple,PronounIndefinite_done_VerbPastParticiple,PronounPersonal_done_Adjective,PronounPersonal_done_Adjective,PronounPersonal_done_VerbBase,PronounPersonal_done_VerbBase,PronounPersonal_done_VerbPastParticiple,PronounPersonal_done_VerbPastParticiple,PronounPersonal_done_VerbPresentParticiple,PronounPersonal_done_VerbPresentParticiple
+,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized
+all,0,0.0,0,0.0,1,0.004429968684994363,0,0.0,0,0.0,0,0.0,0,0.0
+constituentbounday,1,0.004429968684994363,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+everything,0,0.0,0,0.0,1,0.004429968684994363,0,0.0,0,0.0,0,0.0,0,0.0
+he,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,2,0.008859937369988725,0,0.0
+I,0,0.0,0,0.0,0,0.0,4,0.01771987473997745,1,0.004429968684994363,15,0.06644953027491544,0,0.0
+it,0,0.0,0,0.0,0,0.0,1,0.004429968684994363,0,0.0,2,0.008859937369988725,0,0.0
+people,0,0.0,1,0.004429968684994363,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+she,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,5,0.022149843424971814,0,0.0
+society,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.004429968684994363,0,0.0
+they,0,0.0,0,0.0,0,0.0,1,0.004429968684994363,0,0.0,8,0.0354397494799549,0,0.0
+we,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,7,0.03100978079496054,0,0.0
+you,0,0.0,0,0.0,0,0.0,1,0.004429968684994363,1,0.004429968684994363,10,0.04429968684994363,1,0.004429968684994363

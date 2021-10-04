@@ -1,0 +1,5 @@
+,POSPatternRawCount,POSPatternNormalizedCount,POSPatternPercentTotal,POSPatternFileRawCount,POSPatternFilePercentTotal,POSPatternFileList
+Noun_be_VerbPastParticiple,3,0.031,37.5,3,0.05,"['2201-160438-0033', '5894-64095-0014', '7134-67233-0006']"
+Noun_be_VerbPresentParticiple,2,0.021,25.0,2,0.03,"['1649-150127-0042', '3479-153286-0038']"
+PronounPersonal_be_VerbPresentParticiple,2,0.021,25.0,2,0.03,"['1460-138289-0003', '4712-93896-0036']"
+PronounPersonal_be_VerbPastParticiple,1,0.01,12.5,1,0.02,['6060-58090-0004']

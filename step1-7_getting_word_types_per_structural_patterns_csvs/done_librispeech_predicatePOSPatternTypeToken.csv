@@ -1,0 +1,14 @@
+,ConstituentBoundary_done_VerbBase,ConstituentBoundary_done_VerbBase,Noun_done_VerbBase,Noun_done_VerbBase,Noun_done_VerbPastParticiple,Noun_done_VerbPastParticiple,PronounPersonal_done_VerbBase,PronounPersonal_done_VerbBase,PronounPersonal_done_VerbPastParticiple,PronounPersonal_done_VerbPastParticiple
+,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized
+broke,0,0.0,0,0.0,0,0.0,0,0.0,1,0.010299958480867365
+brung,0,0.0,0,0.0,0,0.0,0,0.0,2,0.02059991696173473
+come,0,0.0,1,0.010299958480867365,0,0.0,1,0.010299958480867365,0,0.0
+fly,0,0.0,1,0.010299958480867365,0,0.0,0,0.0,0,0.0
+get,0,0.0,0,0.0,0,0.0,1,0.010299958480867365,0,0.0
+got,0,0.0,0,0.0,0,0.0,0,0.0,1,0.010299958480867365
+hit,0,0.0,0,0.0,0,0.0,0,0.0,1,0.010299958480867365
+lifted,0,0.0,0,0.0,0,0.0,0,0.0,1,0.010299958480867365
+spoil,1,0.010299958480867365,0,0.0,0,0.0,0,0.0,0,0.0
+thought,0,0.0,0,0.0,0,0.0,0,0.0,1,0.010299958480867365
+tol,0,0.0,0,0.0,0,0.0,0,0.0,1,0.010299958480867365
+tole,0,0.0,0,0.0,1,0.010299958480867365,0,0.0,0,0.0

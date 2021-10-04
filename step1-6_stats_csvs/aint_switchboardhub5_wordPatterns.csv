@@ -1,0 +1,27 @@
+,WordPatternRawCount,WordPatternNormalizedCount,WordPatternPercentTotal,WordPatternFileRawCount,WordPatternFilePercentTotal,WordPatternFileList
+constituentboundary_ain't_constituentboundary,3,0.092,10.0,3,0.06,"['sw3348A-ms98-a', 'sw3348B-ms98-a', 'sw_4577']"
+it_ain't_constituentboundary,2,0.061,6.67,2,0.04,"['sw2277A-ms98-a', 'sw2692A-ms98-a']"
+that_ain't_right,2,0.061,6.67,2,0.04,"['sw2277B-ms98-a', 'sw2280A-ms98-a']"
+that_ain't_how,1,0.031,3.33,1,0.02,['sw2410B-ms98-a']
+you_ain't_got,1,0.031,3.33,1,0.02,['sw2913B-ms98-a']
+we_ain't_able,1,0.031,3.33,1,0.02,['sw4063A-ms98-a']
+things_ain't_way,1,0.031,3.33,1,0.02,['sw2575A-ms98-a']
+they_ain't_able,1,0.031,3.33,1,0.02,['sw3379A-ms98-a']
+there_ain't_raining,1,0.031,3.33,1,0.02,['sw4126B-ms98-a']
+there_ain't_nothing,1,0.031,3.33,1,0.02,['sw3990B-ms98-a']
+there_ain't_nobody,1,0.031,3.33,1,0.02,['sw2044B-ms98-a']
+there_ain't_bedrooms,1,0.031,3.33,1,0.02,['sw3415A-ms98-a']
+that_ain't_work,1,0.031,3.33,1,0.02,['sw4219A-ms98-a']
+people_ain't_went,1,0.031,3.33,1,0.02,['sw2136A-ms98-a']
+control_ain't_stop,1,0.031,3.33,1,0.02,['sw3415A-ms98-a']
+nobody_ain't_beat,1,0.031,3.33,1,0.02,['sw2521B-ms98-a']
+mother_ain't_home,1,0.031,3.33,1,0.02,['sw2911A-ms98-a']
+it_ain't_tetris,1,0.031,3.33,1,0.02,['sw3348A-ms98-a']
+it_ain't_problem,1,0.031,3.33,1,0.02,['sw4065B-ms98-a']
+it_ain't_happen,1,0.031,3.33,1,0.02,['sw3435A-ms98-a']
+it_ain't_broke,1,0.031,3.33,1,0.02,['sw2692A-ms98-a']
+it_ain't_bad,1,0.031,3.33,1,0.02,['sw2893B-ms98-a']
+i_ain't_got,1,0.031,3.33,1,0.02,['sw2536A-ms98-a']
+he_ain't_poor,1,0.031,3.33,1,0.02,['sw2968B-ms98-a']
+football_ain't_on,1,0.031,3.33,1,0.02,['sw3971B-ms98-a']
+you_ain't_impress,1,0.031,3.33,1,0.02,['sw3695B-ms98-a']

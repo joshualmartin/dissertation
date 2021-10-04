@@ -1,0 +1,13 @@
+,ConstituentBoundary_done_VerbBase,ConstituentBoundary_done_VerbBase,Noun_done_VerbBase,Noun_done_VerbBase,Noun_done_VerbPastParticiple,Noun_done_VerbPastParticiple,PronounPersonal_done_VerbBase,PronounPersonal_done_VerbBase,PronounPersonal_done_VerbPastParticiple,PronounPersonal_done_VerbPastParticiple
+,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized
+buzzard,0,0.0,1,0.010299958480867365,0,0.0,0,0.0,0,0.0
+captian,0,0.0,0,0.0,1,0.010299958480867365,0,0.0,0,0.0
+constituentboundary,1,0.010299958480867365,0,0.0,0,0.0,0,0.0,0,0.0
+duchess,0,0.0,1,0.010299958480867365,0,0.0,0,0.0,0,0.0
+he,0,0.0,0,0.0,0,0.0,1,0.010299958480867365,1,0.010299958480867365
+I,0,0.0,0,0.0,0,0.0,0,0.0,2,0.02059991696173473
+it,0,0.0,0,0.0,0,0.0,1,0.010299958480867365,0,0.0
+she,0,0.0,0,0.0,0,0.0,0,0.0,1,0.010299958480867365
+they,0,0.0,0,0.0,0,0.0,0,0.0,1,0.010299958480867365
+we,0,0.0,0,0.0,0,0.0,0,0.0,2,0.02059991696173473
+you,0,0.0,0,0.0,0,0.0,0,0.0,1,0.010299958480867365

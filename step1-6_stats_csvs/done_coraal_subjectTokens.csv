@@ -1,0 +1,25 @@
+,SubjectRawCount,SubjectNormalizedCount,SubjectPercentTotal,SubjectFileCount,SubjectFilePercentTotal,SubjectFileList
+i,39,2.826,35.14,25,10.82,"['ATL_se0_ag1_m_04_1', 'ATL_se0_ag1_m_05_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_02_1', 'DCA_se1_ag4_m_01_1', 'DCA_se2_ag3_m_02_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag2_m_02_1', 'DCB_se1_ag3_m_02_1', 'DCB_se1_ag3_m_02_2', 'DCB_se1_ag4_f_01_2', 'DCB_se1_ag4_m_02_1', 'DCB_se2_ag4_f_01_1', 'DCB_se2_ag4_m_01_1', 'DCB_se3_ag1_f_01_1', 'DCB_se3_ag3_f_02_1', 'LES_se0_ag3_m_01_1', 'PRV_se0_ag2_f_02_1', 'PRV_se0_ag2_m_01_1', 'PRV_se0_ag3_m_02_1', 'ROC_se0_ag1_m_01_1', 'ROC_se0_ag3_f_01_1', 'ROC_se0_ag3_f_02_1', 'VLD_se0_ag3_m_01_2', 'VLD_se0_ag4_m_02_1']"
+you,18,1.304,16.22,14,6.06,"['ATL_se0_ag1_m_01_1', 'ATL_se0_ag1_m_05_1', 'ATL_se0_ag2_m_01_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_02_1', 'DCA_se1_ag4_m_01_1', 'DCA_se2_ag3_m_01_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag4_m_02_1', 'DCB_se2_ag4_f_01_1', 'DCB_se3_ag3_m_02_2', 'PRV_se0_ag2_m_01_1', 'PRV_se0_ag2_m_02_1', 'VLD_se0_ag4_m_02_1']"
+they,13,0.942,11.71,10,4.33,"['DCA_se1_ag1_m_03_1', 'DCB_se1_ag2_m_02_2', 'DCB_se1_ag4_f_01_1', 'DCB_se1_ag4_m_01_1', 'DCB_se1_ag4_m_02_1', 'PRV_se0_ag3_m_02_2', 'PRV_se0_ag3_m_03_1', 'VLD_se0_ag3_f_01_1', 'VLD_se0_ag4_f_02_1', 'VLD_se0_ag4_m_02_1']"
+she,7,0.507,6.31,6,2.6,"['DCA_se1_ag1_f_02_1', 'DCA_se3_ag1_f_04_1', 'DCB_se1_ag2_m_01_1', 'DCB_se2_ag4_f_05_1', 'PRV_se0_ag3_f_04_3', 'ROC_se0_ag2_f_02_1']"
+we,6,0.435,5.41,6,2.6,"['ATL_se0_ag2_m_02_1', 'ATL_se0_ag2_m_03_1', 'PRV_se0_ag2_m_02_1', 'PRV_se0_ag2_m_02_2', 'ROC_se0_ag1_m_02_1', 'VLD_se0_ag4_m_01_1']"
+it,5,0.362,4.5,5,2.16,"['DCB_se1_ag4_f_01_2', 'PRV_se0_ag2_f_03_1', 'PRV_se0_ag2_m_01_1', 'PRV_se0_ag3_f_04_1', 'PRV_se0_ag3_m_02_1']"
+everybody,3,0.217,2.7,2,0.87,"['PRV_se0_ag2_m_01_1', 'PRV_se0_ag3_f_03_1']"
+he,2,0.145,1.8,2,0.87,"['LES_se0_ag3_m_01_1', 'VLD_se0_ag3_m_01_2']"
+constituentbounday,2,0.145,1.8,1,0.43,['PRV_se0_ag2_m_01_1']
+people,2,0.145,1.8,2,0.87,"['DCB_se1_ag2_f_02_1', 'ROC_se0_ag1_m_01_1']"
+rdname2,1,0.072,0.9,1,0.43,['VLD_se0_ag3_m_01_2']
+y'all,1,0.072,0.9,1,0.43,['ATL_se0_ag1_m_03_1']
+woman,1,0.072,0.9,1,0.43,['DCB_se1_ag2_m_01_1']
+who,1,0.072,0.9,1,0.43,['DCB_se3_ag1_f_01_1']
+that,1,0.072,0.9,1,0.43,['ATL_se0_ag2_m_03_1']
+all,1,0.072,0.9,1,0.43,['PRV_se0_ag2_m_01_1']
+nobody,1,0.072,0.9,1,0.43,['ATL_se0_ag1_m_04_2']
+nigga,1,0.072,0.9,1,0.43,['ATL_se0_ag2_m_03_1']
+man,1,0.072,0.9,1,0.43,['ROC_se0_ag1_m_01_1']
+lot,1,0.072,0.9,1,0.43,['DCB_se2_ag4_m_01_1']
+kids,1,0.072,0.9,1,0.43,['DCB_se2_ag4_m_01_1']
+family,1,0.072,0.9,1,0.43,['PRV_se0_ag3_f_03_1']
+crowd,1,0.072,0.9,1,0.43,['PRV_se0_ag3_m_03_1']
+niggas,1,0.072,0.9,1,0.43,['ATL_se0_ag2_m_03_1']

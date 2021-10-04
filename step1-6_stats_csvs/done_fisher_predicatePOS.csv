@@ -1,0 +1,5 @@
+,PredicatePOSRawCount,PredicatePOSNormalizedCount,PredicatePOSPercentTotal,PredicatePOSFileRawCount,PredicatePOSFilePercentTotal,PredicatePOSFileList
+VerbPastParticiple,54,0.239,84.38,52,0.44,"['fe0300323', 'fe0300441', 'fe0300505', 'fe0300783', 'fe0300972', 'fe0301176', 'fe0302112', 'fe0302457', 'fe0302649', 'fe0303309', 'fe0303448', 'fe0303451', 'fe0304229', 'fe0304308', 'fe0304688', 'fe0304707', 'fe0305302', 'fe0305348', 'fe0305469', 'fe0305476', 'fe0305829', 'fe0306190', 'fe0306333', 'fe0306857', 'fe0307047', 'fe0307151', 'fe0307301', 'fe0307458', 'fe0307910', 'fe0308273', 'fe0308322', 'fe0308377', 'fe0308797', 'fe0308941', 'fe0309084', 'fe0309129', 'fe0309409', 'fe0309753', 'fe0309957', 'fe0310000', 'fe0310237', 'fe0310371', 'fe0310445', 'fe0310553', 'fe0310572', 'fe0310608', 'fe0310645', 'fe0310716', 'fe0311117', 'fe0311357', 'fe0311468', 'fe0311634']"
+Adjective,7,0.031,10.94,6,0.05,"['fe0305348', 'fe0306070', 'fe0307364', 'fe0310239', 'fe0310640', 'fe0311468']"
+VerbBase,2,0.009,3.12,2,0.02,"['fe0305358', 'fe0308322']"
+VerbPresentParticiple,1,0.004,1.56,1,0.01,['fe0308420']

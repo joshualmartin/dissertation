@@ -1,0 +1,69 @@
+,SubjectRawCount,SubjectNormalizedCount,SubjectPercentTotal,SubjectFileCount,SubjectFilePercentTotal,SubjectFileList
+i,107,7.753,24.54,52,22.51,"['ATL_se0_ag1_f_01_1', 'ATL_se0_ag1_f_03_1', 'ATL_se0_ag1_m_01_1', 'ATL_se0_ag1_m_02_1', 'ATL_se0_ag1_m_04_1', 'ATL_se0_ag1_m_04_2', 'ATL_se0_ag1_m_05_1', 'ATL_se0_ag2_m_01_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_01_1', 'DCA_se1_ag1_f_02_1', 'DCA_se1_ag1_f_04_1', 'DCA_se1_ag1_f_05_1', 'DCA_se1_ag1_m_03_1', 'DCA_se1_ag1_m_04_1', 'DCA_se1_ag1_m_05_1', 'DCA_se1_ag1_m_08_1', 'DCA_se2_ag1_f_02_1', 'DCA_se2_ag1_f_03_1', 'DCA_se2_ag1_f_05_1', 'DCA_se2_ag1_f_07_1', 'DCA_se2_ag1_m_04_1', 'DCA_se3_ag1_f_03_1', 'DCB_se1_ag1_f_01_1', 'DCB_se1_ag1_m_01_1', 'DCB_se1_ag1_m_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag2_m_02_1', 'DCB_se1_ag2_m_03_2', 'DCB_se1_ag3_f_01_1', 'DCB_se1_ag3_f_03_1', 'DCB_se1_ag3_m_02_1', 'DCB_se1_ag4_f_01_2', 'DCB_se2_ag2_f_01_1', 'DCB_se2_ag3_m_02_1', 'DCB_se3_ag1_f_01_1', 'DCB_se3_ag3_f_02_1', 'DCB_se3_ag3_m_02_2', 'LES_se0_ag3_m_01_2', 'PRV_se0_ag1_m_02_1', 'PRV_se0_ag2_m_01_1', 'PRV_se0_ag3_f_03_1', 'PRV_se0_ag3_m_01_1', 'PRV_se0_ag3_m_02_1', 'ROC_se0_ag1_m_01_1', 'ROC_se0_ag1_m_02_1', 'ROC_se0_ag2_f_04_1', 'VLD_se0_ag2_f_02_1', 'VLD_se0_ag2_m_01_1', 'VLD_se0_ag3_m_01_2', 'VLD_se0_ag3_m_03_1', 'VLD_se0_ag4_f_01_1']"
+they,77,5.579,17.66,42,18.18,"['ATL_se0_ag1_f_03_1', 'ATL_se0_ag1_m_01_1', 'ATL_se0_ag1_m_02_1', 'ATL_se0_ag1_m_03_1', 'ATL_se0_ag2_f_02_1', 'ATL_se0_ag2_m_01_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_04_1', 'DCA_se1_ag1_f_05_1', 'DCA_se1_ag1_m_02_1', 'DCA_se1_ag1_m_03_1', 'DCA_se1_ag1_m_04_1', 'DCA_se1_ag1_m_05_1', 'DCA_se2_ag1_f_07_1', 'DCA_se3_ag1_f_03_1', 'DCB_se1_ag1_f_01_1', 'DCB_se1_ag1_f_02_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag1_m_01_1', 'DCB_se1_ag1_m_03_1', 'DCB_se1_ag2_f_01_1', 'DCB_se1_ag2_m_02_1', 'DCB_se1_ag2_m_03_2', 'DCB_se1_ag3_f_02_1', 'DCB_se1_ag3_m_02_1', 'DCB_se1_ag3_m_03_1', 'DCB_se1_ag4_f_01_2', 'DCB_se2_ag1_m_01_1', 'DCB_se3_ag1_f_01_1', 'LES_se0_ag2_f_01_1', 'LES_se0_ag2_f_01_2', 'LES_se0_ag3_m_01_2', 'PRV_se0_ag1_m_02_1', 'PRV_se0_ag2_f_02_2', 'PRV_se0_ag3_f_03_1', 'PRV_se0_ag3_f_04_1', 'PRV_se0_ag3_m_02_1', 'ROC_se0_ag1_m_02_1', 'ROC_se0_ag2_f_02_1', 'VLD_se0_ag2_f_02_1', 'VLD_se0_ag2_m_01_1', 'VLD_se0_ag3_m_03_1']"
+it,43,3.116,9.86,20,8.66,"['ATL_se0_ag1_m_01_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_04_1', 'DCA_se1_ag1_f_05_1', 'DCA_se1_ag1_m_02_1', 'DCA_se2_ag1_f_03_1', 'DCA_se2_ag1_m_03_1', 'DCA_se3_ag1_m_05_1', 'DCB_se1_ag1_f_01_1', 'DCB_se1_ag1_m_01_1', 'DCB_se1_ag1_m_03_1', 'DCB_se1_ag2_f_02_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag2_m_03_1', 'DCB_se1_ag2_m_03_2', 'DCB_se1_ag3_m_01_1', 'DCB_se1_ag3_m_02_1', 'PRV_se0_ag3_m_03_1', 'ROC_se0_ag1_m_01_1', 'ROC_se0_ag1_m_02_1']"
+you,35,2.536,8.03,22,9.52,"['ATL_se0_ag1_f_01_1', 'ATL_se0_ag1_m_01_1', 'ATL_se0_ag1_m_03_1', 'ATL_se0_ag1_m_04_2', 'ATL_se0_ag2_m_02_1', 'DCA_se1_ag1_f_01_1', 'DCA_se1_ag1_f_04_1', 'DCA_se1_ag1_m_07_1', 'DCA_se2_ag1_f_02_1', 'DCA_se2_ag1_m_01_1', 'DCA_se2_ag1_m_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag2_m_02_1', 'DCB_se1_ag3_f_03_1', 'DCB_se1_ag3_m_03_1', 'DCB_se1_ag4_f_01_2', 'DCB_se2_ag2_f_01_1', 'DCB_se2_ag4_f_05_1', 'DCB_se3_ag1_f_01_1', 'PRV_se0_ag2_f_03_1', 'ROC_se0_ag1_m_02_1', 'ROC_se0_ag2_f_02_1']"
+we,28,2.029,6.42,18,7.79,"['ATL_se0_ag1_m_01_1', 'DCA_se1_ag1_f_04_1', 'DCA_se2_ag1_f_01_1', 'DCA_se2_ag1_f_05_1', 'DCA_se3_ag1_f_02_1', 'DCA_se3_ag1_f_04_1', 'DCB_se1_ag1_f_01_1', 'DCB_se1_ag1_m_02_1', 'DCB_se1_ag1_m_03_1', 'DCB_se1_ag3_f_02_2', 'DCB_se1_ag3_m_02_1', 'DCB_se1_ag3_m_02_2', 'DCB_se2_ag2_f_01_1', 'DCB_se3_ag1_f_01_1', 'DCB_se3_ag1_m_01_2', 'PRV_se0_ag2_m_01_1', 'PRV_se0_ag3_f_04_3', 'ROC_se0_ag1_m_02_1']"
+he,18,1.304,4.13,12,5.19,"['ATL_se0_ag1_f_02_1', 'DCA_se1_ag1_m_03_1', 'DCA_se1_ag1_m_05_1', 'DCA_se2_ag1_f_05_1', 'DCA_se3_ag1_m_06_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag1_m_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag3_f_03_1', 'DCB_se2_ag3_m_02_1', 'DCB_se3_ag1_f_01_1', 'PRV_se0_ag2_f_02_2']"
+she,16,1.159,3.67,12,5.19,"['ATL_se0_ag1_f_03_1', 'ATL_se0_ag1_m_03_1', 'DCA_se1_ag1_m_04_1', 'DCA_se1_ag1_m_05_1', 'DCA_se2_ag1_f_03_1', 'DCA_se2_ag1_f_05_1', 'DCA_se2_ag1_f_07_1', 'DCB_se1_ag1_f_01_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag4_f_01_2', 'DCB_se2_ag2_f_01_1', 'DCB_se2_ag4_f_05_1']"
+people,11,0.797,2.52,8,3.46,"['ATL_se0_ag1_m_03_1', 'ATL_se0_ag2_m_01_1', 'DCA_se1_ag1_f_02_1', 'DCB_se1_ag2_m_02_1', 'PRV_se0_ag1_f_01_2', 'ROC_se0_ag1_m_02_1', 'ROC_se0_ag2_f_02_1', 'VLD_se0_ag2_f_02_1']"
+niggas,8,0.58,1.83,3,1.3,"['ATL_se0_ag1_m_01_1', 'ATL_se0_ag1_m_02_1', 'ATL_se0_ag2_m_03_1']"
+everybody,8,0.58,1.83,6,2.6,"['DCA_se2_ag1_f_02_1', 'DCA_se2_ag1_m_03_1', 'DCB_se1_ag3_m_01_1', 'PRV_se0_ag1_f_01_1', 'PRV_se0_ag3_m_02_1', 'VLD_se0_ag2_m_01_1']"
+that,6,0.435,1.38,6,2.6,"['DCA_se2_ag1_m_04_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag3_f_03_1', 'DCB_se1_ag3_m_03_1', 'PRV_se0_ag1_m_02_1']"
+one,5,0.362,1.15,3,1.3,"['DCA_se1_ag1_f_04_1', 'DCA_se1_ag1_m_02_1', 'DCB_se1_ag4_m_02_1']"
+lot,5,0.362,1.15,5,2.16,"['ATL_se0_ag1_m_04_2', 'ATL_se0_ag1_m_05_1', 'DCA_se1_ag1_f_02_1', 'DCA_se1_ag1_m_03_1', 'PRV_se0_ag3_m_02_1']"
+person,5,0.362,1.15,5,2.16,"['DCA_se1_ag1_m_01_1', 'DCA_se2_ag1_f_04_1', 'DCA_se2_ag1_f_05_1', 'DCA_se3_ag1_f_01_1', 'DCB_se1_ag2_f_01_1']"
+brother,3,0.217,0.69,2,0.87,"['DCB_se1_ag1_m_03_1', 'DCB_se1_ag2_m_03_2']"
+there,3,0.217,0.69,3,1.3,"['DCA_se2_ag1_f_03_1', 'DCA_se2_ag1_m_03_1', 'DCB_se3_ag1_f_01_1']"
+children,2,0.145,0.46,2,0.87,"['DCA_se1_ag1_f_01_1', 'DCA_se2_ag1_f_05_1']"
+busses,2,0.145,0.46,1,0.43,['DCB_se1_ag4_f_01_2']
+shit,2,0.145,0.46,2,0.87,"['DCB_se1_ag3_m_02_1', 'DCB_se1_ag3_m_03_1']"
+kids,2,0.145,0.46,2,0.87,"['DCB_se1_ag4_m_02_1', 'DCB_se3_ag1_f_01_1']"
+soulja boy,2,0.145,0.46,1,0.43,['ATL_se0_ag1_m_03_1']
+y'all,2,0.145,0.46,2,0.87,"['ATL_se0_ag1_f_02_1', 'DCB_se1_ag2_f_03_1']"
+rdname3,1,0.072,0.23,1,0.43,['ATL_se0_ag1_f_01_1']
+problems,1,0.072,0.23,1,0.43,['PRV_se0_ag2_m_01_1']
+rdname2,1,0.072,0.23,1,0.43,['DCB_se1_ag1_f_02_1']
+sister,1,0.072,0.23,1,0.43,['DCB_se3_ag3_m_02_1']
+accent,1,0.072,0.23,1,0.43,['ROC_se0_ag1_m_01_1']
+some,1,0.072,0.23,1,0.43,['DCA_se1_ag1_f_01_1']
+somebody,1,0.072,0.23,1,0.43,['DCA_se1_ag1_f_04_1']
+stars,1,0.072,0.23,1,0.43,['DCB_se3_ag1_m_01_1']
+street,1,0.072,0.23,1,0.43,['DCB_se1_ag1_f_01_1']
+teacher,1,0.072,0.23,1,0.43,['DCA_se1_ag1_f_04_1']
+times,1,0.072,0.23,1,0.43,['ROC_se0_ag1_m_01_1']
+train,1,0.072,0.23,1,0.43,['DCB_se2_ag2_f_01_1']
+truck,1,0.072,0.23,1,0.43,['PRV_se0_ag1_m_02_1']
+what,1,0.072,0.23,1,0.43,['DCB_se1_ag1_f_01_1']
+who,1,0.072,0.23,1,0.43,['ATL_se0_ag1_f_02_1']
+whoever,1,0.072,0.23,1,0.43,['DCA_se1_ag1_m_01_1']
+strippers,1,0.072,0.23,1,0.43,['ATL_se0_ag2_f_02_1']
+marbles,1,0.072,0.23,1,0.43,['DCA_se2_ag1_m_03_1']
+nigga,1,0.072,0.23,1,0.43,['ATL_se0_ag2_m_03_1']
+mother,1,0.072,0.23,1,0.43,['DCB_se1_ag1_f_01_1']
+atlanta,1,0.072,0.23,1,0.43,['ATL_se0_ag2_m_03_1']
+bacon,1,0.072,0.23,1,0.43,['ATL_se0_ag1_m_01_1']
+bottles,1,0.072,0.23,1,0.43,['ATL_se0_ag1_m_02_1']
+boy,1,0.072,0.23,1,0.43,['PRV_se0_ag1_m_02_1']
+boys,1,0.072,0.23,1,0.43,['ROC_se0_ag1_m_02_1']
+building,1,0.072,0.23,1,0.43,['DCB_se2_ag4_m_01_1']
+daddy,1,0.072,0.23,1,0.43,['PRV_se0_ag1_f_02_1']
+door,1,0.072,0.23,1,0.43,['PRV_se0_ag2_f_01_4']
+dudes,1,0.072,0.23,1,0.43,['DCB_se1_ag2_m_01_1']
+falling out,1,0.072,0.23,1,0.43,['DCB_se1_ag2_f_02_1']
+father,1,0.072,0.23,1,0.43,['DCB_se2_ag4_m_01_1']
+folks,1,0.072,0.23,1,0.43,['ROC_se0_ag2_f_04_1']
+gangs,1,0.072,0.23,1,0.43,['DCA_se1_ag1_m_04_1']
+girl,1,0.072,0.23,1,0.43,['DCA_se1_ag1_f_02_1']
+girls,1,0.072,0.23,1,0.43,['DCB_se1_ag1_f_03_1']
+grandma,1,0.072,0.23,1,0.43,['ATL_se0_ag1_f_02_1']
+guy,1,0.072,0.23,1,0.43,['DCA_se2_ag1_m_03_1']
+him,1,0.072,0.23,1,0.43,['DCB_se2_ag3_m_03_1']
+house,1,0.072,0.23,1,0.43,['DCB_se1_ag3_f_01_1']
+jont,1,0.072,0.23,1,0.43,['DCB_se2_ag3_m_03_1']
+lebron,1,0.072,0.23,1,0.43,['ATL_se0_ag1_m_03_1']
+mamas,1,0.072,0.23,1,0.43,['ATL_se0_ag1_f_01_1']
+man,1,0.072,0.23,1,0.43,['PRV_se0_ag2_f_03_1']
+anybody,1,0.072,0.23,1,0.43,['DCA_se3_ag1_m_02_1']
+mom,1,0.072,0.23,1,0.43,['PRV_se0_ag1_f_02_1']
+you and denise,1,0.072,0.23,1,0.43,['DCB_se1_ag2_f_02_1']

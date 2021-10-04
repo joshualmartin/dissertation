@@ -1,0 +1,3 @@
+,SubjectPOSRawCount,SubjectPOSNormalizedCount,SubjectPOSPercentTotal,SubjectPOSFileCount,SubjectPOSFilePercentTotal,SubjectPOSFileList
+PronounPersonal,6,0.184,75.0,6,0.12,"['sw2150A-ms98-a', 'sw2255B-ms98-a', 'sw3048B-ms98-a', 'sw3341B-ms98-a', 'sw3594A-ms98-a', 'sw4092B-ms98-a']"
+Noun,2,0.061,25.0,2,0.04,"['sw2420B-ms98-a', 'sw2523B-ms98-a']"

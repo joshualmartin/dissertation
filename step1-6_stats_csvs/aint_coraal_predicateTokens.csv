@@ -1,0 +1,314 @@
+,PredicateRawCount,PredicateNormalizedCount,PredicatePercentTotal,PredicateFileCount,PredicateFilePercentTotal,PredicateFileList
+constituentboundary,124,8.985,11.42,52,22.51,"['ATL_se0_ag1_f_02_1', 'ATL_se0_ag1_m_02_1', 'ATL_se0_ag1_m_03_1', 'ATL_se0_ag1_m_04_1', 'ATL_se0_ag1_m_04_2', 'ATL_se0_ag2_f_02_1', 'ATL_se0_ag2_m_01_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_02_1', 'DCA_se1_ag1_f_03_1', 'DCA_se1_ag1_f_04_1', 'DCA_se1_ag1_f_05_1', 'DCA_se1_ag1_m_03_1', 'DCA_se1_ag1_m_04_1', 'DCA_se1_ag1_m_06_1', 'DCA_se1_ag4_m_02_1', 'DCA_se2_ag1_f_02_1', 'DCA_se2_ag1_f_04_1', 'DCA_se2_ag1_m_01_1', 'DCA_se3_ag1_f_03_1', 'DCA_se3_ag1_m_05_1', 'DCB_se1_ag1_f_01_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag1_m_01_1', 'DCB_se1_ag2_f_02_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag2_m_02_1', 'DCB_se1_ag2_m_03_2', 'DCB_se1_ag3_m_01_1', 'DCB_se1_ag3_m_02_1', 'DCB_se1_ag3_m_03_1', 'DCB_se1_ag4_m_02_1', 'DCB_se2_ag2_f_01_1', 'DCB_se2_ag2_m_01_1', 'DCB_se2_ag3_m_01_1', 'DCB_se2_ag3_m_02_2', 'DCB_se2_ag3_m_03_1', 'DCB_se2_ag4_m_01_1', 'DCB_se3_ag3_m_02_1', 'LES_se0_ag2_f_02_2', 'PRV_se0_ag1_m_02_1', 'PRV_se0_ag2_f_03_1', 'PRV_se0_ag2_m_01_1', 'PRV_se0_ag3_f_02_2', 'PRV_se0_ag3_f_03_1', 'PRV_se0_ag3_m_02_1', 'PRV_se0_ag3_m_02_2', 'PRV_se0_ag3_m_02_3', 'PRV_se0_ag3_m_03_1', 'VLD_se0_ag3_m_03_1', 'VLD_se0_ag4_f_01_1', 'VLD_se0_ag4_m_02_1']"
+got,63,4.565,5.8,32,13.85,"['ATL_se0_ag1_f_02_1', 'ATL_se0_ag1_m_01_1', 'ATL_se0_ag1_m_03_1', 'ATL_se0_ag1_m_04_1', 'ATL_se0_ag1_m_04_2', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_03_1', 'DCA_se1_ag1_m_03_1', 'DCA_se1_ag1_m_07_1', 'DCA_se1_ag4_m_02_1', 'DCA_se2_ag1_f_02_1', 'DCA_se2_ag3_m_02_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag3_f_01_1', 'DCB_se1_ag4_m_02_1', 'DCB_se2_ag4_f_01_1', 'DCB_se2_ag4_f_05_1', 'DCB_se2_ag4_m_01_1', 'DCB_se3_ag3_f_02_1', 'LES_se0_ag4_m_02_1', 'PRV_se0_ag1_m_02_1', 'PRV_se0_ag2_m_01_1', 'PRV_se0_ag3_f_03_1', 'PRV_se0_ag3_f_04_3', 'PRV_se0_ag3_m_01_1', 'PRV_se0_ag3_m_02_1', 'PRV_se0_ag3_m_02_2', 'PRV_se0_ag3_m_03_1', 'ROC_se0_ag2_f_02_1', 'VLD_se0_ag3_m_01_2', 'VLD_se0_ag3_m_03_1']"
+know,32,2.319,2.95,22,9.52,"['ATL_se0_ag1_m_01_1', 'ATL_se0_ag1_m_03_1', 'ATL_se0_ag2_m_01_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_05_1', 'DCA_se1_ag1_m_02_1', 'DCA_se1_ag4_m_02_1', 'DCA_se2_ag1_f_02_1', 'DCA_se2_ag3_m_02_1', 'DCB_se1_ag1_f_01_1', 'DCB_se1_ag1_m_01_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag2_m_02_2', 'DCB_se1_ag2_m_03_1', 'DCB_se1_ag2_m_03_2', 'DCB_se1_ag3_m_03_1', 'DCB_se2_ag2_f_02_1', 'DCB_se2_ag4_f_01_1', 'DCB_se3_ag3_f_02_1', 'DCB_se3_ag3_m_02_1', 'PRV_se0_ag1_m_02_1', 'ROC_se0_ag2_f_02_1']"
+nothing,31,2.246,2.85,18,7.79,"['ATL_se0_ag1_f_02_1', 'ATL_se0_ag1_m_04_1', 'ATL_se0_ag1_m_05_1', 'ATL_se0_ag2_m_01_1', 'DCA_se1_ag1_f_01_1', 'DCA_se1_ag1_m_07_2', 'DCA_se1_ag4_m_02_1', 'DCB_se1_ag2_m_02_1', 'DCB_se1_ag2_m_03_2', 'DCB_se1_ag3_m_03_1', 'DCB_se2_ag3_m_01_1', 'DCB_se2_ag3_m_03_1', 'DCB_se2_ag4_m_01_1', 'PRV_se0_ag1_m_02_1', 'PRV_se0_ag2_f_01_1', 'ROC_se0_ag1_m_02_1', 'ROC_se0_ag2_f_02_1', 'VLD_se0_ag4_m_02_1']"
+have,27,1.956,2.49,19,8.23,"['ATL_se0_ag1_f_01_1', 'DCA_se1_ag1_f_02_1', 'DCA_se1_ag1_f_04_1', 'DCA_se1_ag1_f_05_1', 'DCA_se2_ag1_f_01_1', 'DCA_se3_ag1_f_03_1', 'DCA_se3_ag1_m_06_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag2_m_02_1', 'DCB_se1_ag3_f_01_1', 'DCB_se1_ag4_f_01_2', 'DCB_se2_ag4_f_01_1', 'DCB_se2_ag4_f_05_1', 'DCB_se3_ag1_f_01_1', 'PRV_se0_ag1_m_02_1', 'VLD_se0_ag2_f_02_1', 'VLD_se0_ag3_m_01_2', 'VLD_se0_ag3_m_03_1', 'VLD_se0_ag4_f_01_1']"
+going,24,1.739,2.21,14,6.06,"['ATL_se0_ag1_m_03_1', 'ATL_se0_ag2_f_02_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag4_m_02_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag3_m_03_1', 'DCB_se2_ag4_f_05_1', 'DCB_se2_ag4_m_01_1', 'DCB_se3_ag1_m_01_2', 'LES_se0_ag3_m_01_1', 'PRV_se0_ag3_m_02_2', 'PRV_se0_ag3_m_03_1', 'ROC_se0_ag2_f_02_1', 'VLD_se0_ag4_m_02_1']"
+like,23,1.667,2.12,14,6.06,"['ATL_se0_ag1_m_01_1', 'ATL_se0_ag2_f_01_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_03_1', 'DCA_se1_ag1_f_05_1', 'DCA_se2_ag1_f_02_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag2_f_02_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag3_m_01_1', 'DCB_se1_ag3_m_03_1', 'DCB_se2_ag4_f_05_1', 'DCB_se2_ag4_m_01_1', 'VLD_se0_ag4_f_02_1']"
+do,22,1.594,2.03,20,8.66,"['ATL_se0_ag1_f_01_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_m_02_1', 'DCA_se3_ag1_f_04_1', 'DCB_se1_ag1_f_01_1', 'DCB_se1_ag1_m_03_1', 'DCB_se1_ag2_f_02_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag3_f_03_1', 'DCB_se1_ag3_m_02_1', 'DCB_se1_ag3_m_03_1', 'DCB_se2_ag3_m_01_1', 'DCB_se2_ag4_f_05_1', 'DCB_se2_ag4_m_01_1', 'PRV_se0_ag1_f_02_1', 'PRV_se0_ag1_m_02_1', 'PRV_se0_ag3_f_03_1', 'PRV_se0_ag3_m_03_1', 'VLD_se0_ag3_m_01_1', 'VLD_se0_ag4_m_02_1']"
+say,20,1.449,1.84,14,6.06,"['ATL_se0_ag1_m_02_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_04_1', 'DCA_se1_ag3_f_01_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag2_m_03_2', 'DCB_se2_ag3_f_02_1', 'DCB_se2_ag4_m_01_1', 'DCB_se3_ag3_f_02_1', 'PRV_se0_ag2_m_01_1', 'PRV_se0_ag3_f_03_1', 'ROC_se0_ag1_m_02_1', 'VLD_se0_ag2_f_02_1']"
+had,19,1.377,1.75,15,6.49,"['DCA_se1_ag1_f_01_1', 'DCA_se1_ag1_m_06_1', 'DCA_se1_ag4_m_02_1', 'DCA_se2_ag1_f_02_1', 'DCA_se2_ag3_m_02_1', 'DCB_se1_ag1_f_01_1', 'DCB_se1_ag1_m_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag2_m_02_1', 'DCB_se1_ag3_m_03_1', 'DCB_se1_ag4_m_02_1', 'DCB_se2_ag4_f_01_1', 'PRV_se0_ag1_m_02_1', 'PRV_se0_ag3_f_03_1', 'PRV_se0_ag3_m_03_1']"
+lie,19,1.377,1.75,8,3.46,"['ATL_se0_ag1_f_01_1', 'ATL_se0_ag1_m_01_1', 'ATL_se0_ag1_m_03_1', 'ATL_se0_ag1_m_04_1', 'ATL_se0_ag1_m_04_2', 'ATL_se0_ag2_m_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag3_f_02_2']"
+get,19,1.377,1.75,13,5.63,"['ATL_se0_ag1_m_03_1', 'ATL_se0_ag1_m_04_2', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag1_m_03_1', 'DCB_se1_ag2_f_02_1', 'DCB_se1_ag2_m_01_1', 'DCB_se2_ag3_m_01_1', 'DCB_se2_ag3_m_03_1', 'PRV_se0_ag1_f_01_1', 'PRV_se0_ag1_m_02_1', 'ROC_se0_ag1_m_03_1', 'VLD_se0_ag2_m_01_1', 'VLD_se0_ag3_m_03_1']"
+seen,18,1.304,1.66,13,5.63,"['ATL_se0_ag1_f_01_1', 'ATL_se0_ag1_f_02_1', 'ATL_se0_ag2_m_01_1', 'DCA_se1_ag1_m_06_1', 'DCA_se2_ag1_f_02_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag4_f_01_2', 'LES_se0_ag2_f_01_2', 'PRV_se0_ag1_m_02_1', 'PRV_se0_ag3_m_02_2', 'ROC_se0_ag1_m_02_1', 'VLD_se0_ag2_m_01_1', 'VLD_se0_ag3_m_03_1']"
+doing,18,1.304,1.66,12,5.19,"['ATL_se0_ag1_m_04_2', 'ATL_se0_ag2_m_01_1', 'ATL_se0_ag2_m_02_1', 'DCB_se1_ag1_f_01_1', 'DCB_se1_ag3_m_03_1', 'DCB_se1_ag4_m_02_1', 'DCB_se2_ag4_f_05_1', 'DCB_se2_ag4_m_01_1', 'PRV_se0_ag3_m_03_1', 'ROC_se0_ag1_m_02_1', 'VLD_se0_ag3_m_01_2', 'VLD_se0_ag4_m_02_1']"
+nowhere,17,1.232,1.57,2,0.87,"['DCB_se1_ag2_m_03_2', 'DCB_se2_ag3_m_01_1']"
+want,17,1.232,1.57,14,6.06,"['ATL_se0_ag1_m_02_1', 'ATL_se0_ag1_m_03_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_03_1', 'DCA_se1_ag1_f_04_1', 'DCB_se1_ag1_f_01_1', 'DCB_se2_ag4_f_05_1', 'DCB_se3_ag1_f_01_1', 'DCB_se3_ag3_m_02_1', 'DCB_se3_ag4_m_01_1', 'VLD_se0_ag2_f_02_1', 'VLD_se0_ag3_m_01_1', 'VLD_se0_ag3_m_03_1', 'VLD_se0_ag4_m_02_1']"
+go,17,1.232,1.57,14,6.06,"['ATL_se0_ag1_f_01_1', 'ATL_se0_ag1_m_02_1', 'ATL_se0_ag2_f_01_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag4_m_02_1', 'DCA_se2_ag1_f_05_1', 'DCA_se2_ag1_m_05_1', 'DCB_se1_ag1_f_01_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag1_m_03_1', 'DCB_se1_ag3_m_02_1', 'DCB_se1_ag3_m_03_1', 'DCB_se2_ag4_f_05_1', 'DCB_se2_ag4_m_01_1']"
+trying,11,0.797,1.01,9,3.9,"['ATL_se0_ag1_m_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag2_m_03_2', 'DCB_se1_ag3_m_02_2', 'DCB_se1_ag4_m_02_1', 'DCB_se2_ag4_m_01_1', 'PRV_se0_ag1_m_02_1', 'VLD_se0_ag3_m_03_1', 'VLD_se0_ag4_m_02_1']"
+see,11,0.797,1.01,7,3.03,"['ATL_se0_ag1_m_03_1', 'ATL_se0_ag2_m_01_1', 'DCA_se1_ag1_f_02_1', 'DCA_se1_ag1_m_02_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se2_ag4_f_05_1']"
+in,9,0.652,0.83,9,3.9,"['ATL_se0_ag1_m_02_1', 'ATL_se0_ag2_m_03_1', 'DCB_se1_ag2_m_03_2', 'DCB_se1_ag3_f_01_1', 'DCB_se1_ag3_m_03_1', 'DCB_se2_ag4_m_01_1', 'LES_se0_ag4_m_02_1', 'PRV_se0_ag1_m_02_1', 'PRV_se0_ag3_m_03_1']"
+let,9,0.652,0.83,6,2.6,"['ATL_se0_ag2_f_02_1', 'ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_f_05_1', 'DCA_se1_ag1_m_02_1', 'DCB_se3_ag4_m_01_1', 'PRV_se0_ag3_f_03_1']"
+about,9,0.652,0.83,9,3.9,"['ATL_se0_ag1_f_02_1', 'ATL_se0_ag2_f_02_1', 'ATL_se0_ag2_m_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se2_ag3_m_01_1', 'DCB_se2_ag4_f_01_1', 'DCB_se2_ag4_f_05_1', 'DCB_se3_ag3_m_01_1', 'PRV_se0_ag1_m_02_1']"
+getting,9,0.652,0.83,7,3.03,"['DCA_se1_ag1_f_02_1', 'DCA_se2_ag1_f_04_1', 'DCB_se1_ag3_m_03_1', 'DCB_se2_ag4_f_03_2', 'DCB_se2_ag4_m_01_1', 'LES_se0_ag3_m_02_1', 'PRV_se0_ag1_m_02_1']"
+talking,9,0.652,0.83,4,1.73,"['ATL_se0_ag2_m_03_1', 'DCA_se1_ag4_m_02_1', 'DCB_se2_ag1_f_01_1', 'DCB_se2_ag4_m_01_1']"
+way,7,0.507,0.64,6,2.6,"['ATL_se0_ag1_m_04_1', 'ATL_se0_ag1_m_04_2', 'ATL_se0_ag2_m_02_1', 'DCB_se2_ag4_m_01_1', 'PRV_se0_ag2_m_01_1', 'VLD_se0_ag3_m_01_1']"
+different,7,0.507,0.64,2,0.87,"['DCB_se2_ag4_m_01_1', 'PRV_se0_ag1_m_02_1']"
+worry,7,0.507,0.64,6,2.6,"['ATL_se0_ag1_m_03_1', 'ATL_se0_ag1_m_04_1', 'DCA_se1_ag4_m_02_1', 'DCB_se2_ag4_f_05_1', 'DCB_se2_ag4_m_01_1', 'PRV_se0_ag1_m_02_1']"
+think,7,0.507,0.64,6,2.6,"['ATL_se0_ag1_m_02_1', 'ATL_se0_ag1_m_04_1', 'ATL_se0_ag2_m_01_1', 'ATL_se0_ag2_m_03_1', 'DCB_se1_ag1_f_03_1', 'ROC_se0_ag2_f_02_1']"
+nobody,7,0.507,0.64,7,3.03,"['DCB_se1_ag2_m_03_2', 'DCB_se1_ag3_m_03_1', 'DCB_se2_ag4_m_01_1', 'DCB_se3_ag3_f_02_1', 'DCB_se3_ag4_m_01_1', 'PRV_se0_ag2_m_01_1', 'PRV_se0_ag3_m_03_1']"
+tell,6,0.435,0.55,5,2.16,"['ATL_se0_ag2_m_01_1', 'DCA_se1_ag1_f_04_1', 'DCA_se2_ag1_m_01_1', 'DCB_se1_ag1_f_03_1', 'PRV_se0_ag1_f_02_1']"
+take,5,0.362,0.46,4,1.73,"['ATL_se0_ag1_m_01_1', 'DCB_se1_ag3_f_01_1', 'DCB_se2_ag4_f_05_1', 'DCB_se3_ag3_m_02_1']"
+coming,5,0.362,0.46,4,1.73,"['DCB_se1_ag1_m_01_1', 'DCB_se1_ag2_m_01_1', 'DCB_se2_ag4_f_05_1', 'PRV_se0_ag3_m_03_1']"
+making,5,0.362,0.46,3,1.3,"['ATL_se0_ag1_m_05_1', 'DCB_se2_ag4_m_01_1', 'LES_se0_ag3_m_01_2']"
+been,5,0.362,0.46,5,2.16,"['DCB_se1_ag2_f_02_1', 'DCB_se1_ag2_m_01_1', 'PRV_se0_ag2_f_03_1', 'PRV_se0_ag3_f_02_2', 'VLD_se0_ag4_m_02_1']"
+care,5,0.362,0.46,4,1.73,"['DCA_se3_ag1_m_06_1', 'DCB_se1_ag1_f_03_1', 'DCB_se2_ag3_m_01_1', 'DCB_se2_ag4_f_05_1']"
+call,5,0.362,0.46,3,1.3,"['ATL_se0_ag1_f_02_1', 'DCB_se1_ag4_m_02_1', 'VLD_se0_ag3_m_03_1']"
+much,5,0.362,0.46,5,2.16,"['DCB_se1_ag3_m_02_1', 'DCB_se1_ag3_m_03_1', 'DCB_se2_ag3_m_03_1', 'DCB_se2_ag4_f_01_1', 'ROC_se0_ag1_m_02_1']"
+on,5,0.362,0.46,5,2.16,"['ATL_se0_ag2_m_01_1', 'DCB_se1_ag1_m_03_1', 'DCB_se1_ag4_f_01_2', 'DCB_se2_ag1_f_01_1', 'VLD_se0_ag4_f_02_1']"
+give,5,0.362,0.46,5,2.16,"['DCA_se1_ag1_m_01_1', 'DCA_se1_ag4_m_02_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag4_m_02_1', 'PRV_se0_ag3_m_03_1']"
+me,4,0.29,0.37,4,1.73,"['ATL_se0_ag2_m_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se2_ag4_m_01_1', 'PRV_se0_ag1_f_02_1']"
+mistaken,4,0.29,0.37,1,0.43,['DCB_se2_ag4_m_01_1']
+really,4,0.29,0.37,4,1.73,"['DCB_se1_ag2_m_01_1', 'DCB_se1_ag2_m_03_2', 'VLD_se0_ag2_m_01_1', 'VLD_se0_ag3_m_01_2']"
+for,4,0.29,0.37,3,1.3,"['DCB_se1_ag3_m_03_1', 'PRV_se0_ag2_f_02_1', 'VLD_se0_ag3_m_03_1']"
+worried,4,0.29,0.37,4,1.73,"['ATL_se0_ag1_m_04_1', 'DCB_se1_ag2_m_01_1', 'PRV_se0_ag1_f_02_2', 'PRV_se0_ag3_m_03_1']"
+it,4,0.29,0.37,4,1.73,"['DCB_se1_ag2_m_01_1', 'DCB_se1_ag2_m_03_2', 'DCB_se1_ag4_m_02_1', 'DCB_se2_ag1_m_01_1']"
+heard,4,0.29,0.37,4,1.73,"['ATL_se0_ag1_m_01_1', 'DCB_se1_ag2_m_01_1', 'DCB_se1_ag3_m_03_1', 'PRV_se0_ag3_f_03_1']"
+right,4,0.29,0.37,4,1.73,"['DCB_se1_ag2_m_02_2', 'DCB_se1_ag4_f_01_2', 'DCB_se2_ag4_f_05_1', 'DCB_se2_ag4_m_01_1']"
+ask,4,0.29,0.37,4,1.73,"['ATL_se0_ag1_m_03_1', 'DCB_se1_ag1_f_03_1', 'DCB_se1_ag3_m_02_1', 'DCB_se2_ag4_m_01_1']"
+thinking,4,0.29,0.37,2,0.87,"['DCB_se1_ag2_m_01_1', 'DCB_se2_ag3_m_03_1']"
+there,4,0.29,0.37,4,1.73,"['DCA_se2_ag1_f_05_1', 'DCA_se3_ag3_m_03_1', 'DCB_se1_ag2_m_01_1', 'PRV_se0_ag3_m_03_1']"
+telling,4,0.29,0.37,3,1.3,"['ATL_se0_ag2_m_03_1', 'DCA_se2_ag1_f_02_1', 'VLD_se0_ag3_m_03_1']"
+saying,4,0.29,0.37,4,1.73,"['DCA_se2_ag1_f_02_1', 'DCB_se2_ag1_f_01_1', 'DCB_se2_ag4_m_01_1', 'VLD_se0_ag3_m_01_2']"
+leave,4,0.29,0.37,3,1.3,"['DCB_se1_ag3_f_03_1', 'PRV_se0_ag2_m_01_1', 'PRV_se0_ag3_f_03_1']"
+taking,4,0.29,0.37,4,1.73,"['ATL_se0_ag1_m_01_1', 'ATL_se0_ag2_f_01_1', 'DCB_se1_ag1_m_03_1', 'DCB_se1_ag4_m_02_1']"
+sitting,4,0.29,0.37,1,0.43,['DCB_se2_ag4_m_01_1']
+never,3,0.217,0.28,3,1.3,"['ATL_se0_ag2_m_03_1', 'DCB_se1_ag2_m_03_2', 'DCB_se1_ag4_f_01_2']"
+good,3,0.217,0.28,2,0.87,"['DCB_se1_ag2_m_02_3', 'PRV_se0_ag3_f_03_1']"
+giving,3,0.217,0.28,3,1.3,"['ATL_se0_ag1_m_03_1', 'DCB_se1_ag4_m_01_1', 'DCB_se2_ag4_m_01_1']"
+fuck,3,0.217,0.28,1,0.43,['ATL_se0_ag2_m_03_1']
+into,3,0.217,0.28,3,1.3,"['PRV_se0_ag1_f_02_1', 'PRV_se0_ag2_f_03_1', 'PRV_se0_ag3_m_02_1']"
+forgot,3,0.217,0.28,2,0.87,"['DCB_se1_ag2_m_01_1', 'VLD_se0_ag2_f_01_1']"
+done,3,0.217,0.28,2,0.87,"['DCB_se1_ag3_m_03_1', 'PRV_se0_ag3_m_03_1']"
+feel,3,0.217,0.28,3,1.3,"['ATL_se0_ag2_m_03_1', 'DCA_se3_ag1_f_03_1', 'DCB_se1_ag1_m_03_1']"
+hear,3,0.217,0.28,3,1.3,"['ATL_se0_ag1_m_04_2', 'DCA_se3_ag1_f_03_1', 'DCA_se3_ag1_f_04_1']"
+here,3,0.217,0.28,3,1.3,"['ATL_se0_ag1_m_01_1', 'DCB_se2_ag4_m_01_1', 'PRV_se0_ag3_m_02_1']"
+mean,3,0.217,0.28,2,0.87,"['DCA_se1_ag1_f_03_1', 'DCA_se1_ag1_f_04_1']"
+make,3,0.217,0.28,3,1.3,"['DCA_se1_ag1_m_04_1', 'DCB_se1_ag2_m_01_1', 'LES_se0_ag3_m_01_2']"
+old,3,0.217,0.28,3,1.3,"['DCA_se1_ag1_m_07_1', 'PRV_se0_ag1_m_02_1', 'PRV_se0_ag3_f_03_1']"
+playing,3,0.217,0.28,3,1.3,"['DCB_se1_ag2_m_01_1', 'PRV_se0_ag1_m_02_1', 'ROC_se0_ag2_f_02_1']"
+change,3,0.217,0.28,3,1.3,"['DCB_se1_ag3_f_02_1', 'DCB_se2_ag3_m_03_1', 'DCB_se2_ag4_m_01_1']"
+ready,3,0.217,0.28,2,0.87,"['ATL_se0_ag1_m_04_2', 'DCA_se1_ag4_m_02_1']"
+rdname,3,0.217,0.28,3,1.3,"['ATL_se0_ag1_m_03_1', 'DCA_se1_ag1_f_04_1', 'DCB_se1_ag2_f_02_1']"
+came,3,0.217,0.28,3,1.3,"['DCB_se1_ag2_m_01_1', 'PRV_se0_ag3_f_03_1', 'VLD_se0_ag3_m_03_1']"
+put,3,0.217,0.28,3,1.3,"['ATL_se0_ag1_m_04_1', 'ATL_se0_ag2_m_01_1', 'DCB_se1_ag1_f_01_1']"
+putting,3,0.217,0.28,3,1.3,"['DCA_se1_ag1_m_02_1', 'DCA_se1_ag4_m_02_1', 'DCB_se3_ag4_m_01_1']"
+did,3,0.217,0.28,3,1.3,"['ATL_se0_ag1_f_01_1', 'DCB_se1_ag2_m_03_2', 'PRV_se0_ag1_m_02_1']"
+went,3,0.217,0.28,3,1.3,"['ATL_se0_ag2_m_03_1', 'DCB_se1_ag2_m_01_1', 'DCB_se3_ag1_f_01_1']"
+with,3,0.217,0.28,2,0.87,"['DCB_se1_ag2_m_03_2', 'ROC_se0_ag2_f_02_1']"
+one,3,0.217,0.28,3,1.3,"['ATL_se0_ag2_m_01_1', 'ATL_se0_ag2_m_03_1', 'DCB_se2_ag4_m_01_1']"
+use,2,0.145,0.18,2,0.87,"['ATL_se0_ag1_m_04_1', 'DCA_se3_ag1_f_03_1']"
+stunting,2,0.145,0.18,2,0.87,"['VLD_se0_ag3_m_01_2', 'VLD_se0_ag3_m_03_1']"
+something,2,0.145,0.18,2,0.87,"['DCB_se2_ag4_f_05_1', 'DCB_se2_ag4_m_01_1']"
+son,2,0.145,0.18,1,0.43,['DCB_se2_ag4_m_01_1']
+spend,2,0.145,0.18,2,0.87,"['DCB_se2_ag4_f_05_1', 'ROC_se0_ag2_f_02_1']"
+work,2,0.145,0.18,2,0.87,"['PRV_se0_ag3_m_02_2', 'ROC_se0_ag2_f_02_1']"
+stay,2,0.145,0.18,2,0.87,"['DCB_se1_ag1_f_03_1', 'PRV_se0_ag3_m_03_1']"
+talk,2,0.145,0.18,2,0.87,"['ATL_se0_ag2_f_01_1', 'DCB_se2_ag4_f_05_1']"
+tripping,2,0.145,0.18,2,0.87,"['DCB_se1_ag2_m_01_1', 'VLD_se0_ag3_m_01_2']"
+thought,2,0.145,0.18,2,0.87,"['DCB_se1_ag4_f_01_2', 'VLD_se0_ag3_m_01_2']"
+kill,2,0.145,0.18,1,0.43,['DCB_se1_ag4_m_02_1']
+tried,2,0.145,0.18,1,0.43,['DCB_se1_ag4_m_02_1']
+white,2,0.145,0.18,2,0.87,"['ATL_se0_ag1_f_02_1', 'DCB_se2_ag4_f_02_1']"
+keep,2,0.145,0.18,2,0.87,"['ATL_se0_ag2_m_03_1', 'DCB_se1_ag3_m_01_1']"
+joke,2,0.145,0.18,2,0.87,"['DCB_se2_ag2_f_01_1', 'ROC_se0_ag2_f_02_1']"
+singer,2,0.145,0.18,1,0.43,['DCB_se1_ag3_m_03_1']
+reason,2,0.145,0.18,2,0.87,"['LES_se0_ag4_m_02_1', 'PRV_se0_ag3_f_03_1']"
+late,2,0.145,0.18,2,0.87,"['DCA_se1_ag1_m_02_1', 'VLD_se0_ag3_m_01_2']"
+man,2,0.145,0.18,1,0.43,['PRV_se0_ag3_m_02_1']
+need,2,0.145,0.18,2,0.87,"['DCB_se1_ag2_m_03_2', 'DCB_se2_ag4_f_05_1']"
+help,2,0.145,0.18,2,0.87,"['DCB_se2_ag4_f_01_1', 'LES_se0_ag4_f_01_2']"
+pay,2,0.145,0.18,2,0.87,"['ATL_se0_ag1_f_02_1', 'DCB_se2_ag4_m_01_1']"
+messing,2,0.145,0.18,2,0.87,"['DCB_se2_ag3_m_02_2', 'DCB_se2_ag4_f_05_1']"
+meet,2,0.145,0.18,2,0.87,"['DCB_se1_ag1_m_01_1', 'VLD_se0_ag3_m_03_1']"
+paying,2,0.145,0.18,2,0.87,"['ATL_se0_ag1_m_02_1', 'DCB_se2_ag4_m_01_1']"
+people,2,0.145,0.18,2,0.87,"['DCB_se2_ag3_m_03_1', 'DCB_se3_ag3_m_02_1']"
+mad,2,0.145,0.18,1,0.43,['LES_se0_ag3_m_01_1']
+same,2,0.145,0.18,2,0.87,"['DCB_se2_ag4_m_01_1', 'ROC_se0_ag2_f_02_1']"
+luck,2,0.145,0.18,1,0.43,['PRV_se0_ag1_m_02_1']
+looking,2,0.145,0.18,2,0.87,"['DCA_se1_ag4_m_02_1', 'DCB_se1_ag2_m_03_2']"
+look,2,0.145,0.18,2,0.87,"['DCA_se1_ag1_f_02_1', 'PRV_se0_ag2_m_02_1']"
+long,2,0.145,0.18,2,0.87,"['ATL_se0_ag2_m_03_1', 'PRV_se0_ag3_m_02_1']"
+ran,2,0.145,0.18,2,0.87,"['VLD_se0_ag3_m_01_2', 'VLD_se0_ag4_m_02_1']"
+real,2,0.145,0.18,2,0.87,"['DCB_se1_ag2_f_01_1', 'DCB_se2_ag1_f_01_1']"
+none,2,0.145,0.18,1,0.43,['DCB_se2_ag4_m_01_1']
+out,2,0.145,0.18,2,0.87,"['ATL_se0_ag1_m_02_1', 'LES_se0_ag3_m_01_2']"
+yours,2,0.145,0.18,2,0.87,"['ATL_se0_ag1_f_01_1', 'DCB_se2_ag4_m_01_1']"
+bother,2,0.145,0.18,2,0.87,"['DCA_se1_ag4_m_02_1', 'VLD_se0_ag4_f_02_1']"
+feeling,2,0.145,0.18,1,0.43,['ATL_se0_ag1_m_03_1']
+fun,2,0.145,0.18,2,0.87,"['DCA_se1_ag1_f_03_1', 'DCB_se3_ag4_m_01_1']"
+fucking,2,0.145,0.18,1,0.43,['DCB_se1_ag3_m_03_1']
+asking,2,0.145,0.18,1,0.43,['DCB_se1_ag2_m_02_2']
+difference,2,0.145,0.18,2,0.87,"['DCB_se1_ag3_m_02_1', 'LES_se0_ag4_m_02_1']"
+bad,2,0.145,0.18,2,0.87,"['DCA_se2_ag1_f_02_1', 'DCB_se2_ag4_m_01_1']"
+from,2,0.145,0.18,2,0.87,"['ATL_se0_ag2_m_03_1', 'DCB_se1_ag4_f_01_2']"
+come,2,0.145,0.18,2,0.87,"['DCB_se1_ag3_m_03_1', 'DCB_se1_ag4_m_02_1']"
+catch,2,0.145,0.18,2,0.87,"['ATL_se0_ag2_m_03_1', 'DCA_se1_ag1_m_07_1']"
+boo,2,0.145,0.18,1,0.43,['DCB_se1_ag1_f_03_1']
+drop,2,0.145,0.18,1,0.43,['DCB_se1_ag1_m_03_1']
+changed,2,0.145,0.18,2,0.87,"['DCB_se1_ag3_f_02_1', 'DCB_se1_ag3_m_02_1']"
+around,2,0.145,0.18,2,0.87,"['DCB_se1_ag4_m_02_1', 'DCB_se2_ag4_m_01_1']"
+bigger,2,0.145,0.18,1,0.43,['ATL_se0_ag1_m_04_2']
+felt,2,0.145,0.18,1,0.43,['PRV_se0_ag3_m_02_2']
+steer,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_01_1']
+staying,1,0.072,0.09,1,0.43,['LES_se0_ag4_m_02_1']
+stop,1,0.072,0.09,1,0.43,['PRV_se0_ag3_m_03_1']
+stopped,1,0.072,0.09,1,0.43,['VLD_se0_ag3_m_03_1']
+hearing,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_03_1']
+store,1,0.072,0.09,1,0.43,['VLD_se0_ag3_m_03_1']
+stressing,1,0.072,0.09,1,0.43,['PRV_se0_ag1_f_01_1']
+studied,1,0.072,0.09,1,0.43,['DCA_se1_ag1_f_03_1']
+study,1,0.072,0.09,1,0.43,['DCA_se1_ag1_m_05_1']
+supporter,1,0.072,0.09,1,0.43,['DCB_se1_ag3_m_03_1']
+sure,1,0.072,0.09,1,0.43,['LES_se0_ag3_m_01_1']
+survive,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_01_1']
+taco bell,1,0.072,0.09,1,0.43,['VLD_se0_ag3_m_03_1']
+black,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_03_1']
+bought,1,0.072,0.09,1,0.43,['PRV_se0_ag3_m_02_2']
+boutique,1,0.072,0.09,1,0.43,['LES_se0_ag2_f_02_1']
+standing,1,0.072,0.09,1,0.43,['PRV_se0_ag3_f_03_1']
+show,1,0.072,0.09,1,0.43,['DCB_se1_ag4_f_01_2']
+child,1,0.072,0.09,1,0.43,['PRV_se0_ag1_f_02_2']
+cheap,1,0.072,0.09,1,0.43,['DCB_se1_ag3_f_01_1']
+secret,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_05_1']
+security,1,0.072,0.09,1,0.43,['ROC_se0_ag1_m_02_1']
+by,1,0.072,0.09,1,0.43,['PRV_se0_ag3_m_03_1']
+seeping,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_01_1']
+serious,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_03_1']
+shit,1,0.072,0.09,1,0.43,['LES_se0_ag2_f_01_2']
+shooting,1,0.072,0.09,1,0.43,['VLD_se0_ag4_m_02_1']
+shrimp boat,1,0.072,0.09,1,0.43,['DCB_se2_ag3_f_02_1']
+spread,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_03_1']
+sing,1,0.072,0.09,1,0.43,['PRV_se0_ag3_m_01_2']
+buying,1,0.072,0.09,1,0.43,['DCB_se2_ag4_f_05_1']
+bring,1,0.072,0.09,1,0.43,['VLD_se0_ag3_m_03_1']
+slipping,1,0.072,0.09,1,0.43,['DCB_se1_ag3_m_03_1']
+small,1,0.072,0.09,1,0.43,['DCA_se1_ag4_m_02_1']
+breaking,1,0.072,0.09,1,0.43,['LES_se0_ag4_m_02_1']
+boy,1,0.072,0.09,1,0.43,['PRV_se0_ag3_f_03_1']
+sound,1,0.072,0.09,1,0.43,['DCA_se2_ag2_m_02_1']
+big,1,0.072,0.09,1,0.43,['ATL_se0_ag1_f_01_1']
+talked,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_01_1']
+ten,1,0.072,0.09,1,0.43,['DCA_se2_ag3_m_02_1']
+teenager,1,0.072,0.09,1,0.43,['DCB_se1_ag4_m_02_1']
+achieved,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_04_2']
+any,1,0.072,0.09,1,0.43,['PRV_se0_ag2_f_03_1']
+antiwhite,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_01_1']
+wash,1,0.072,0.09,1,0.43,['DCB_se1_ag3_m_01_1']
+watch,1,0.072,0.09,1,0.43,['PRV_se0_ag1_m_02_1']
+ambulances,1,0.072,0.09,1,0.43,['DCB_se2_ag4_f_05_1']
+allow,1,0.072,0.09,1,0.43,['DCB_se3_ag4_m_01_1']
+what,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_01_1']
+when,1,0.072,0.09,1,0.43,['VLD_se0_ag3_m_01_2']
+afraid,1,0.072,0.09,1,0.43,['DCB_se2_ag4_f_05_1']
+woke,1,0.072,0.09,1,0.43,['DCB_se2_ag3_f_02_1']
+better,1,0.072,0.09,1,0.43,['DCB_se2_ag4_m_01_1']
+accustomed,1,0.072,0.09,1,0.43,['DCB_se1_ag1_m_03_1']
+working,1,0.072,0.09,1,0.43,['PRV_se0_ag3_m_02_1']
+accept,1,0.072,0.09,1,0.43,['DCB_se2_ag3_m_03_1']
+abuse,1,0.072,0.09,1,0.43,['PRV_se0_ag3_m_01_1']
+worrying,1,0.072,0.09,1,0.43,['DCB_se2_ag4_f_05_1']
+worth,1,0.072,0.09,1,0.43,['PRV_se0_ag1_m_02_1']
+writing,1,0.072,0.09,1,0.43,['DCA_se1_ag1_m_02_1']
+you,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_01_1']
+young,1,0.072,0.09,1,0.43,['DCA_se1_ag1_m_02_1']
+up,1,0.072,0.09,1,0.43,['DCB_se2_ag3_f_02_1']
+understood,1,0.072,0.09,1,0.43,['PRV_se0_ag1_m_02_1']
+understand,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_02_1']
+turf,1,0.072,0.09,1,0.43,['DCB_se2_ag4_m_01_1']
+believe,1,0.072,0.09,1,0.43,['DCA_se1_ag1_m_02_1']
+roll,1,0.072,0.09,1,0.43,['DCB_se1_ag1_m_01_1']
+that,1,0.072,0.09,1,0.43,['DCB_se1_ag3_f_03_1']
+bedrooms,1,0.072,0.09,1,0.43,['LES_se0_ag4_m_02_1']
+thing,1,0.072,0.09,1,0.43,['DCB_se1_ag2_f_02_1']
+beating,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_01_1']
+be,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_03_1']
+thousand,1,0.072,0.09,1,0.43,['DCB_se2_ag4_m_01_1']
+time,1,0.072,0.09,1,0.43,['DCB_se2_ag4_f_05_1']
+times,1,0.072,0.09,1,0.43,['PRV_se0_ag3_m_02_2']
+today,1,0.072,0.09,1,0.43,['DCB_se1_ag1_m_03_1']
+touch,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_01_1']
+town,1,0.072,0.09,1,0.43,['PRV_se0_ag2_f_03_1']
+tradition,1,0.072,0.09,1,0.43,['DCB_se1_ag3_m_03_1']
+traditions,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_01_1']
+trick,1,0.072,0.09,1,0.43,['DCA_se3_ag1_f_03_1']
+at,1,0.072,0.09,1,0.43,['PRV_se0_ag1_m_02_1']
+trip,1,0.072,0.09,1,0.43,['DCB_se2_ag3_m_03_1']
+try,1,0.072,0.09,1,0.43,['DCB_se3_ag3_m_02_1']
+run,1,0.072,0.09,1,0.43,['LES_se0_ag3_m_01_1']
+respect,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_01_1']
+rock and roll,1,0.072,0.09,1,0.43,['PRV_se0_ag3_m_01_2']
+far,1,0.072,0.09,1,0.43,['PRV_se0_ag1_f_01_2']
+live,1,0.072,0.09,1,0.43,['DCB_se1_ag4_m_02_1']
+lived,1,0.072,0.09,1,0.43,['PRV_se0_ag3_f_02_2']
+living,1,0.072,0.09,1,0.43,['DCA_se1_ag1_f_03_1']
+five boroughs,1,0.072,0.09,1,0.43,['LES_se0_ag3_m_01_1']
+filled,1,0.072,0.09,1,0.43,['DCB_se2_ag4_f_01_1']
+fight,1,0.072,0.09,1,0.43,['DCB_se1_ag3_m_02_1']
+lose,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_01_1']
+love,1,0.072,0.09,1,0.43,['DCA_se1_ag1_f_05_1']
+major,1,0.072,0.09,1,0.43,['DCA_se1_ag4_m_02_1']
+fan,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_01_1']
+listen,1,0.072,0.09,1,0.43,['DCB_se2_ag4_m_01_1']
+explained,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_03_1']
+martin,1,0.072,0.09,1,0.43,['PRV_se0_ag3_f_03_1']
+matter,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_03_1']
+everywhere,1,0.072,0.09,1,0.43,['DCB_se1_ag3_m_03_1']
+even,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_02_1']
+elaborate,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_03_2']
+eat,1,0.072,0.09,1,0.43,['DCA_se1_ag1_f_04_1']
+earned,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_04_2']
+motion,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_01_1']
+listening,1,0.072,0.09,1,0.43,['ROC_se0_ag2_f_02_1']
+food,1,0.072,0.09,1,0.43,['DCB_se1_ag4_m_02_1']
+choice,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_01_1']
+hard,1,0.072,0.09,1,0.43,['DCB_se2_ag4_f_05_1']
+hit,1,0.072,0.09,1,0.43,['DCB_se2_ag4_f_05_1']
+hoe,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_03_1']
+home,1,0.072,0.09,1,0.43,['VLD_se0_ag4_f_02_1']
+hot,1,0.072,0.09,1,0.43,['VLD_se0_ag4_m_02_1']
+hurt,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_01_1']
+hustle,1,0.072,0.09,1,0.43,['DCB_se2_ag4_m_01_1']
+have to,1,0.072,0.09,1,0.43,['VLD_se0_ag3_m_03_1']
+interested,1,0.072,0.09,1,0.43,['PRV_se0_ag3_m_01_2']
+hater,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_03_1']
+happening,1,0.072,0.09,1,0.43,['ATL_se0_ag1_f_02_1']
+leaving,1,0.072,0.09,1,0.43,['LES_se0_ag3_m_02_1']
+happen,1,0.072,0.09,1,0.43,['DCB_se1_ag1_f_03_1']
+grounded,1,0.072,0.09,1,0.43,['PRV_se0_ag3_f_03_1']
+knew,1,0.072,0.09,1,0.43,['DCB_se3_ag3_m_02_1']
+girlfriend,1,0.072,0.09,1,0.43,['DCB_se1_ag1_f_03_1']
+knowed,1,0.072,0.09,1,0.43,['DCA_se3_ag1_f_03_1']
+last,1,0.072,0.09,1,0.43,['DCB_se1_ag3_m_03_1']
+gaining,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_03_1']
+learned,1,0.072,0.09,1,0.43,['DCA_se1_ag1_m_03_1']
+learnt,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_04_2']
+move,1,0.072,0.09,1,0.43,['PRV_se0_ag3_f_03_1']
+moving,1,0.072,0.09,1,0.43,['DCB_se2_ag4_f_05_1']
+earn,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_04_2']
+reach,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_04_1']
+play,1,0.072,0.09,1,0.43,['DCA_se1_ag1_f_04_1']
+played,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_01_1']
+cousins,1,0.072,0.09,1,0.43,['VLD_se0_ag3_m_01_1']
+point,1,0.072,0.09,1,0.43,['DCB_se2_ag4_m_01_1']
+psychologist,1,0.072,0.09,1,0.43,['DCA_se1_ag4_m_02_1']
+count,1,0.072,0.09,1,0.43,['DCA_se1_ag1_f_04_1']
+conversation,1,0.072,0.09,1,0.43,['DCB_se2_ag4_m_01_1']
+connected,1,0.072,0.09,1,0.43,['DCB_se2_ag3_m_01_1']
+competition,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_04_2']
+reached,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_04_2']
+name,1,0.072,0.09,1,0.43,['DCB_se1_ag3_m_03_1']
+read,1,0.072,0.09,1,0.43,['DCB_se1_ag3_f_03_1']
+cocky,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_02_1']
+realize,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_01_1']
+claim,1,0.072,0.09,1,0.43,['ATL_se0_ag1_f_01_1']
+chump,1,0.072,0.09,1,0.43,['DCB_se2_ag3_m_03_1']
+remember,1,0.072,0.09,1,0.43,['DCB_se1_ag2_f_02_1']
+having,1,0.072,0.09,1,0.43,['DCB_se1_ag3_m_03_1']
+restaurant,1,0.072,0.09,1,0.43,['DCB_se1_ag2_f_02_1']
+ride or die,1,0.072,0.09,1,0.43,['VLD_se0_ag3_f_01_2']
+plan,1,0.072,0.09,1,0.43,['PRV_se0_ag3_f_03_1']
+places,1,0.072,0.09,1,0.43,['VLD_se0_ag2_m_01_1']
+place,1,0.072,0.09,1,0.43,['DCB_se2_ag3_m_01_1']
+pick,1,0.072,0.09,1,0.43,['DCB_se1_ag3_m_01_1']
+dumbest,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_04_2']
+network,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_03_1']
+drunk,1,0.072,0.09,1,0.43,['DCB_se1_ag4_f_01_2']
+nigga,1,0.072,0.09,1,0.43,['ATL_se0_ag1_m_03_1']
+driving,1,0.072,0.09,1,0.43,['PRV_se0_ag3_f_03_1']
+drive,1,0.072,0.09,1,0.43,['PRV_se0_ag3_f_03_1']
+notice,1,0.072,0.09,1,0.43,['DCB_se1_ag2_m_01_1']
+dinner,1,0.072,0.09,1,0.43,['PRV_se0_ag1_m_02_1']
+off,1,0.072,0.09,1,0.43,['PRV_se0_ag1_m_02_1']
+deep,1,0.072,0.09,1,0.43,['PRV_se0_ag1_f_01_1']
+dead,1,0.072,0.09,1,0.43,['DCA_se3_ag1_f_03_1']
+day,1,0.072,0.09,1,0.43,['DCB_se1_ag1_f_03_1']
+over,1,0.072,0.09,1,0.43,['DCB_se2_ag4_m_01_1']
+parenting,1,0.072,0.09,1,0.43,['ATL_se0_ag1_f_01_1']
+cutting,1,0.072,0.09,1,0.43,['DCB_se2_ag4_m_01_1']
+cussing,1,0.072,0.09,1,0.43,['DCB_se1_ag3_f_03_1']
+peace,1,0.072,0.09,1,0.43,['ATL_se0_ag2_m_01_1']
+crazy,1,0.072,0.09,1,0.43,['VLD_se0_ag4_m_02_1']
+personal,1,0.072,0.09,1,0.43,['DCB_se1_ag3_m_01_1']
+able,1,0.072,0.09,1,0.43,['DCB_se1_ag3_f_03_1']

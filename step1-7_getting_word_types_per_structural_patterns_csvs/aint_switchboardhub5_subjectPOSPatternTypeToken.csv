@@ -1,0 +1,17 @@
+,ConstituentBoundary_ain't_ConstituentBoundary,ConstituentBoundary_ain't_ConstituentBoundary,Noun_ain't_Noun,Noun_ain't_Noun,Noun_ain't_Preposition,Noun_ain't_Preposition,Noun_ain't_VerbBase,Noun_ain't_VerbBase,Noun_ain't_VerbPastParticiple,Noun_ain't_VerbPastParticiple,PronounDemonstrative_ain't_Adjective,PronounDemonstrative_ain't_Adjective,PronounDemonstrative_ain't_PronounRelative,PronounDemonstrative_ain't_PronounRelative,PronounDemonstrative_ain't_VerbBase,PronounDemonstrative_ain't_VerbBase,PronounIndefinite_ain't_VerbBase,PronounIndefinite_ain't_VerbBase,PronounNonReferential_ain't_Noun,PronounNonReferential_ain't_Noun,PronounNonReferential_ain't_PronounIndefinite,PronounNonReferential_ain't_PronounIndefinite,PronounNonReferential_ain't_VerbPresentParticiple,PronounNonReferential_ain't_VerbPresentParticiple,PronounPersonal_ain't_Adjective,PronounPersonal_ain't_Adjective,PronounPersonal_ain't_ConstituentBoundary,PronounPersonal_ain't_ConstituentBoundary,PronounPersonal_ain't_Noun,PronounPersonal_ain't_Noun,PronounPersonal_ain't_VerbBase,PronounPersonal_ain't_VerbBase,PronounPersonal_ain't_VerbPastParticiple,PronounPersonal_ain't_VerbPastParticiple
+,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized,Raw,Normalized
+constituentboundary,3,0.09175484817325272,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+control,0,0.0,0,0.0,0,0.0,1,0.030584949391084245,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+football,0,0.0,0,0.0,1,0.030584949391084245,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+he,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.030584949391084245,0,0.0,0,0.0,0,0.0,0,0.0
+I,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.030584949391084245
+it,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.030584949391084245,2,0.06116989878216849,2,0.06116989878216849,1,0.030584949391084245,1,0.030584949391084245
+mother,0,0.0,1,0.030584949391084245,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+nobody,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.030584949391084245,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+people,0,0.0,0,0.0,0,0.0,0,0.0,1,0.030584949391084245,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+that,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,2,0.06116989878216849,1,0.030584949391084245,1,0.030584949391084245,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+there,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.030584949391084245,2,0.06116989878216849,1,0.030584949391084245,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+they,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.030584949391084245,0,0.0,0,0.0,0,0.0,0,0.0
+things,0,0.0,1,0.030584949391084245,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+we,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.030584949391084245,0,0.0,0,0.0,0,0.0,0,0.0
+you,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,0.030584949391084245,1,0.030584949391084245

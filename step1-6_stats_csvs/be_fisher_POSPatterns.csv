@@ -1,0 +1,21 @@
+,POSPatternRawCount,POSPatternNormalizedCount,POSPatternPercentTotal,POSPatternFileRawCount,POSPatternFilePercentTotal,POSPatternFileList
+PronounPersonal_be_VerbPresentParticiple,75,0.332,46.58,57,0.49,"['fe0300492', 'fe0300967', 'fe0301485', 'fe0301997', 'fe0302048', 'fe0302192', 'fe0302283', 'fe0302344', 'fe0302805', 'fe0302848', 'fe0303030', 'fe0303794', 'fe0303809', 'fe0303901', 'fe0304440', 'fe0304610', 'fe0304618', 'fe0305572', 'fe0305779', 'fe0305874', 'fe0305883', 'fe0306508', 'fe0306522', 'fe0306857', 'fe0307255', 'fe0307601', 'fe0307810', 'fe0308050', 'fe0308322', 'fe0308472', 'fe0308483', 'fe0308864', 'fe0308935', 'fe0309152', 'fe0309183', 'fe0309205', 'fe0309335', 'fe0309531', 'fe0309549', 'fe0309595', 'fe0309957', 'fe0310000', 'fe0310001', 'fe0310114', 'fe0310237', 'fe0310266', 'fe0310306', 'fe0310309', 'fe0310332', 'fe0310428', 'fe0310495', 'fe0310630', 'fe0310756', 'fe0310921', 'fe0311071', 'fe0311518', 'fe0311687']"
+Noun_be_VerbPresentParticiple,18,0.08,11.18,18,0.15,"['fe0300505', 'fe0300860', 'fe0301431', 'fe0302192', 'fe0304524', 'fe0304618', 'fe0305757', 'fe0306643', 'fe0307956', 'fe0308026', 'fe0308935', 'fe0310000', 'fe0310277', 'fe0310286', 'fe0310489', 'fe0310495', 'fe0310592', 'fe0310784']"
+PronounPersonal_be_Preposition,13,0.058,8.07,12,0.1,"['fe0302048', 'fe0303247', 'fe0305053', 'fe0305321', 'fe0305451', 'fe0305880', 'fe0307151', 'fe0307219', 'fe0308935', 'fe0309522', 'fe0309687', 'fe0310354']"
+PronounPersonal_be_Adjective,12,0.053,7.45,12,0.1,"['fe0302163', 'fe0302848', 'fe0305068', 'fe0305097', 'fe0307601', 'fe0307794', 'fe0308472', 'fe0309117', 'fe0310492', 'fe0310495', 'fe0310574', 'fe0311071']"
+PronounPersonal_be_QuotativeLike,8,0.035,4.97,8,0.07,"['fe0302344', 'fe0303253', 'fe0303435', 'fe0307601', 'fe0307810', 'fe0307954', 'fe0311281', 'fe0311635']"
+PronounPersonal_be_Adverb,6,0.027,3.73,6,0.05,"['fe0301544', 'fe0302344', 'fe0304382', 'fe0305062', 'fe0307153', 'fe0311497']"
+PronounPersonal_be_VerbPastParticiple,4,0.018,2.48,3,0.03,"['fe0307810', 'fe0309553', 'fe0311476']"
+PronounNonReferential_be_Adjective,4,0.018,2.48,4,0.03,"['fe0300598', 'fe0300693', 'fe0305927', 'fe0306733']"
+PronounNonReferential_be_VerbPresentParticiple,3,0.013,1.86,3,0.03,"['fe0310266', 'fe0310570', 'fe0310592']"
+Noun_be_Adverb,3,0.013,1.86,3,0.03,"['fe0300558', 'fe0307156', 'fe0311468']"
+Noun_be_Adjective,2,0.009,1.24,2,0.02,"['fe0307601', 'fe0307794']"
+PronounNonReferential_be_QuotativeLike,2,0.009,1.24,2,0.02,"['fe0307601', 'fe0310753']"
+PronounNonReferential_be_Noun,2,0.009,1.24,2,0.02,"['fe0305218', 'fe0309778']"
+PronounNonReferential_be_ConstituentBoundary,2,0.009,1.24,1,0.01,['fe0310592']
+Noun_be_QuotativeLike,2,0.009,1.24,2,0.02,"['fe0309336', 'fe0310883']"
+PronounPersonal_be_Noun,1,0.004,0.62,1,0.01,['fe0311212']
+PronounPersonal_be_PronounIndefinite,1,0.004,0.62,1,0.01,['fe0301323']
+PronounIndefinite_be_Adverb,1,0.004,0.62,1,0.01,['fe0311468']
+Noun_be_Preposition,1,0.004,0.62,1,0.01,['fe0310861']
+PronounRelative_be_QuotativeLike,1,0.004,0.62,1,0.01,['fe0305877']
