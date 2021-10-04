@@ -1,0 +1,5 @@
+,CORAAL,Fisher,LibriSpeech,SwitchboardHub5,TIMIT
+TotalCorpusWordCount,1380054.0,22573523.0,9708777.0,3269582.0,23012.0
+TotalWordInstancesCount,522.0,12040.0,4869.0,1985.0,0.0
+NormalizedWordInstancesCount,37.82,53.34,50.15,60.71,0.0
+TotalFileCount,231.0,11699.0,5831.0,4916.0,2463.0
