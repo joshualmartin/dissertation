@@ -39,7 +39,7 @@ Step 2.1 parses CORAAL audio files using the Python package parselmouth.
 ### Step 2.2: Getting Signal to Noise Ratio
 Step 2.2 calculates Signal to Noise Ratio (SNR) in audio files.
 
-### Step 2.3:Getting Speech Rate
+### Step 2.3: Getting Speech Rate
 Step 2.3 calculates speech rate for audio files.
 
 ### Step 2.4: Getting Transcriptions from Automatic Speech Recognition (ASR) Services
